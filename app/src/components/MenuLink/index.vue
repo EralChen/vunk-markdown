@@ -66,15 +66,14 @@ export default defineComponent({
           'is-exact-active': isExactActive,
         }"
         @click.prevent="doNav(navigate)"
+      ></a>
+      <slot
+        :is-active="isActive"
+        :is-exact-active="isExactActive"
       >
-        <slot
-          :is-active="isActive"
-          :is-exact-active="isExactActive"
-        >
-          <!-- {{ data.meta?.name }} -->
-          <span></span>
-        </slot>
-      </a>
+        <!-- {{ data.meta?.name }} -->
+        <span></span>
+      </slot>
     </template>
   </RouterLink>
 </template>
@@ -84,7 +83,14 @@ export default defineComponent({
   text-decoration: none;
   color: var(--el-menu-text-color);
 }
-
+.layout-default-aside-link{ /* link 热区 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--el-color-primary);
+}
 .layout-default-aside-link.is-active {
   color: var(--el-menu-item-active-color);
 }

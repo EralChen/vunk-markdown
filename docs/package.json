@@ -9,17 +9,19 @@
   "dependencies": {
     "@vunk/gsap": "0.0.0-alpha.3",
     "deepdash-es": "^5.3.9",
-    "gsap": "^3.12.5",
-    "prism-theme-vars": "^0.2.4"
+    "gsap": "^3.13.0",
+    "prism-theme-vars": "^0.2.5"
   },
   "devDependencies": {
-    "@iconify-json/ri": "^1.1.20",
-    "@mdit-vue/shared": "^2.0.0",
-    "markdown-it-anchor": "^8.6.7",
+    "@iconify-json/ri": "^1.2.5",
+    "@mdit-vue/shared": "^2.1.4",
+    "@shikijs/core": "^3.4.1",
+    "@shikijs/transformers": "^3.4.1",
+    "markdown-it-anchor": "^9.2.0",
     "markdown-it-container": "^4.0.0",
-    "unplugin-icons": "^0.18.1",
-    "unplugin-vue-components": "^0.26.0",
-    "vite-plugin-inspect": "^0.8.3",
-    "vitepress": "^1.1.4"
+    "unplugin-icons": "^22.1.0",
+    "unplugin-vue-components": "^28.5.0",
+    "vite-plugin-inspect": "^11.0.1",
+    "vitepress": "^1.6.3"
   }
 }

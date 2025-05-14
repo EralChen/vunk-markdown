@@ -1,26 +1,26 @@
 {
   "name": "@lib-env/build-utils",
   "private": true,
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "unbuild",
     "dev": "pnpm run stub",
     "stub": "unbuild --stub"
   },
   "devDependencies": {
-    "@pnpm/types": "^9.4.2",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@pnpm/types": "^1000.6.0",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "rollup-plugin-css-only": "^4.5.2",
-    "rollup-plugin-esbuild": "^6.1.1",
-    "rollup-plugin-multi-input": "^1.4.1",
-    "ts-morph": "^22.0.0"
+    "rollup-plugin-esbuild": "^6.2.1",
+    "rollup-plugin-multi-input": "^1.5.0",
+    "ts-morph": "^25.0.1"
   }
 }

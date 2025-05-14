@@ -1,9 +1,5 @@
 <script lang="ts" setup>
 import type { RouteRecordRaw } from 'vue-router'
-import { useSharedMenuClick } from '@/composables'
-import { routes as constRoutes } from '@/router'
-import { usePermissionStore } from '@/stores/permission'
-import { useViewsStore } from '@/stores/views'
 import { SkAppIcon } from '@skzz/platform/components/app-icon'
 import { VkRoutesMenuContent } from '@vunk/skzz/components/routes-menu-content'
 import LinkVue from '_c/MenuLink/index.vue'
@@ -11,6 +7,9 @@ import { filterDeep } from 'deepdash-es/standalone'
 import { ElMenu } from 'element-plus'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { routes as constRoutes } from '@/router'
+import { usePermissionStore } from '@/stores/permission'
+import { useViewsStore } from '@/stores/views'
 
 const emit = defineEmits({
   load: null,
@@ -18,7 +17,6 @@ const emit = defineEmits({
 const route = useRoute()
 const permissionStore = usePermissionStore()
 const viewsStore = useViewsStore()
-useSharedMenuClick()
 
 const navRoutes = computed(() => {
   return filterDeep([...permissionStore.routes, ...constRoutes], (v) => {

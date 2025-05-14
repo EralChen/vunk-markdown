@@ -1,17 +1,16 @@
 <script lang="ts" setup>
 import type { AnyFunc } from '@vunk/core'
 import type { Ref } from 'vue'
-import { useSharedMenuClick } from '@/composables'
-import { routes as constRoutes } from '@/router'
-import { useLayoutStore } from '@/stores/layout'
-import { usePermissionStore } from '@/stores/permission'
-import { useViewsStore } from '@/stores/views'
 import { SkAppIcon } from '@skzz/platform/components/app-icon'
 import { VkRoutesMenuContent } from '@vunk/skzz/components/routes-menu-content'
 import LinkVue from '_c/MenuLink/index.vue'
 import { ElMenu } from 'element-plus'
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { routes as constRoutes } from '@/router'
+import { useLayoutStore } from '@/stores/layout'
+import { usePermissionStore } from '@/stores/permission'
+import { useViewsStore } from '@/stores/views'
 import CollapseVue from './Collapse.vue'
 
 const emit = defineEmits({
@@ -23,7 +22,6 @@ const layoutStore = useLayoutStore()
 const permissionStore = usePermissionStore()
 const route = useRoute()
 const menuNode = ref() as Ref<{ open: AnyFunc }>
-useSharedMenuClick()
 
 const finalRoutes = computed(() => {
   return viewsStore.currentBaseView?.children || [...permissionStore.routes, ...constRoutes]

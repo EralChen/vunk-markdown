@@ -10,3 +10,4 @@ import 'vitepress/dist/client/theme-default/styles/components/vp-doc.css'
 // import 'vitepress/dist/client/theme-default/styles/components/vp-sponsor.css'
 
 import './reset.css'
+import './shiki.css'

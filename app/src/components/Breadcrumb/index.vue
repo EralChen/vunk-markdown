@@ -34,16 +34,13 @@ function handleLink (item: RouteLocationMatched) {
 </script>
 
 <template>
-  <!-- bg-bg-overlay border-b border-b-border-base -->
   <ElBreadcrumb
-
     class="pa-page breadcrumb"
     separator=">"
   >
-    <!-- <TransitionGroup name="breadcrumb"> -->
     <ElBreadcrumbItem
-      v-for="(item) in levelList"
-      :key="item.path"
+      v-for="(item, index) in levelList"
+      :key="item.path + index"
     >
       <a
         @click.prevent="handleLink(item)"
@@ -51,7 +48,6 @@ function handleLink (item: RouteLocationMatched) {
         {{ item.meta.title }}
       </a>
     </ElBreadcrumbItem>
-    <!-- </TransitionGroup> -->
   </ElBreadcrumb>
 </template>
 

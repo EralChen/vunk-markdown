@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useLayoutStore } from '@/stores/layout'
 import { ArrowLeft, ArrowRight } from '@element-plus/icons-vue'
+import { useLayoutStore } from '@/stores/layout'
 
 const layoutStore = useLayoutStore()
 </script>

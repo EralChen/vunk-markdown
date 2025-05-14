@@ -1,0 +1,15 @@
+.dark .shiki span {
+  color: var(--shiki-dark, inherit);
+}
+
+html:not(.dark) .shiki span {
+  color: var(--shiki-light, inherit);
+}
+
+.dark .shiki  {
+  background-color: var(--shiki-dark-bg, inherit);
+}
+html:not(.dark) .shiki {
+  background-color: var(--shiki-light-bg, inherit);
+}
+
