@@ -32,6 +32,10 @@
 └── webdriver/          # 自动化测试
 ```
 
+:::tip
+`app-ssr` , `slidev`, `webdriver` 是可选的目录, 若你的项目不需要它们, 直接删除即可！
+:::
+
 ## 技术栈
 
 - Vue 3
