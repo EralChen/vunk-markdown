@@ -1,7 +1,6 @@
 <script>
-import { useInitTheme } from '@/composables'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-import './init-esri'
+import { useInitTheme } from '@/composables'
 
 export default {
   name: 'App',

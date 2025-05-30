@@ -1,3 +1,6 @@
+/* eslint-disable perfectionist/sort-imports */
+import './init-esri' // 初始化 Esri 配置
+import '@/api'// api 初始化
 import * as ElIconsVue from '@element-plus/icons-vue'
 import { VkSvgIcon } from '@vunk/core'
 import PageOver from '_c/PageOver/index.vue'
@@ -7,9 +10,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './stores'
-
-// 初始化 api 配置
-import '@/api'
 
 import 'virtual:svg-icons-register'
 // import './permission'
