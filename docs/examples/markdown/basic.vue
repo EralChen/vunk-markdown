@@ -4,13 +4,16 @@ import { computed, ref } from 'vue'
 
 const text = `# Hello, Markdown!
 This is a simple example of using **Markdown** in a Vue component.
+
+\`\`\`javascript
+console.log('Hello, world!');
+\`\`\`
+
 You can write _italic_, **bold**, and even [links](https://example.com).
 
 + List item 1
 + List item 2
-  \`\`\`javascript
-  console.log('Hello, world!');
-  \`\`\`
+
 + Nested list item
   + Sub-item 1
   + Sub-item 2

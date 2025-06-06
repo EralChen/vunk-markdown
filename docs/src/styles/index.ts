@@ -4,7 +4,7 @@ import './element-plus'
 import '@vunk/core/index.css'
 import '@vunk/form/index.css'
 import '@vunk/gsap/index.css'
-
+import '@vunk/plus/index.css'
 import './form'
 import './layout/index.css'
 import '@skzz/platform/index.css'

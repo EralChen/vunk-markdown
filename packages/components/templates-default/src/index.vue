@@ -1,6 +1,7 @@
 <script lang="tsx">
 import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { defineComponent } from 'vue'
+import Code from './code.vue'
 
 export default defineComponent({
   name: 'VkTemplatesDefault',
@@ -47,11 +48,11 @@ export default defineComponent({
 
           {{
             default: ({ raw }) => {
-              const lang = raw.info ? raw.info.split(' ')[0] : ''
               return (
-                <pre>
-                  <code class={lang}>{raw.content}</code>
-                </pre>
+                <Code
+                  modelValue={raw.content}
+                >
+                </Code>
               )
             },
           }}
