@@ -32,7 +32,7 @@ const interval = setInterval(() => {
   else {
     clearInterval(interval)
   }
-}, 100)
+}, 50)
 </script>
 
 <template>
