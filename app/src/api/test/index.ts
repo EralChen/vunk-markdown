@@ -5,7 +5,7 @@
  * zz-test 目录下有参考的示例
  */
 
-import { request } from '@skzz-template/shared/fetch'
+import { request } from '@vunk-markdown/shared/fetch'
 
 export function rTestData () {
   return request<{

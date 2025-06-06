@@ -1,5 +1,5 @@
 {
-  "name": "@skzz-template/slidev",
+  "name": "@vunk-markdown/slidev",
   "type": "module",
   "private": true,
   "scripts": {

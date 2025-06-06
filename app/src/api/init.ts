@@ -1,6 +1,6 @@
 import { restFetch as platformRestFetch } from '@skzz/platform/shared/fetch/platform'
 import { restFetch as publicRestFetch } from '@skzz/platform/shared/fetch/public'
-import { restFetch } from '@skzz-template/shared/fetch'
+import { restFetch } from '@vunk-markdown/shared/fetch'
 import { ElementPlusRestFetchPlugin } from '@vunk/shared/fetch/ElementPlusRestFetchPlugin'
 
 publicRestFetch.baseURL = `${import.meta.env.VITE_BASE_URL}/data`

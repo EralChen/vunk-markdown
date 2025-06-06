@@ -1,4 +1,4 @@
-import { User } from '@skzz-template/api/user'
+import { User } from '@vunk-markdown/api/user'
 
 export type Row = User
 export {}

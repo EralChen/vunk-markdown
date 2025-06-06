@@ -23,7 +23,7 @@ export const createVue = (mriData: {
   t: string
   l: string
 }) => `<script lang="ts" setup>
-import { ${capitalize(LIB_PRE)}${mriData.t} } from '@skzz-template/components/${mriData.l}'
+import { ${capitalize(LIB_PRE)}${mriData.t} } from '@vunk-markdown/components/${mriData.l}'
 </script>
 <template>
   <div></div>

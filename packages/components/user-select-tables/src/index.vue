@@ -2,7 +2,7 @@
 import type { __SkAppTablesV1 } from '@skzz/platform'
 import type { Row } from './types'
 import { SkTablesCheckbox } from '@skzz/platform/components/tables-checkbox'
-import { rUsers } from '@skzz-template/api/user'
+import { rUsers } from '@vunk-markdown/api/user'
 import { defineComponent, onMounted, ref } from 'vue'
 import { emits, props } from './ctx'
 

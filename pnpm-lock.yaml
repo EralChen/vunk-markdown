@@ -14,25 +14,25 @@ importers:
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.8.3))
-      '@skzz-template/api':
+      '@vunk-markdown/api':
         specifier: workspace:*
         version: link:packages/api
-      '@skzz-template/components':
+      '@vunk-markdown/components':
         specifier: workspace:*
         version: link:packages/components
-      '@skzz-template/composables':
+      '@vunk-markdown/composables':
         specifier: workspace:*
         version: link:packages/composables
-      '@skzz-template/shared':
+      '@vunk-markdown/shared':
         specifier: workspace:*
         version: link:packages/shared
-      '@skzz-template/stores':
+      '@vunk-markdown/stores':
         specifier: workspace:*
         version: link:packages/stores
       '@skzz/platform':
         specifier: 0.0.0-alpha.76
         version: 0.0.0-alpha.76
-      '@skzz/template':
+      '@vunk/markdown':
         specifier: workspace:*
         version: link:packages/entry
       '@vuesri/core':

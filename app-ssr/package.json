@@ -1,5 +1,5 @@
 {
-  "name": "@skzz-template/app-ssr",
+  "name": "@vunk-markdown/app-ssr",
   "version": "0.0.0",
   "scripts": {
     "dev": "cross-env DEBUG=http tsx ./server/bin/www.ts",

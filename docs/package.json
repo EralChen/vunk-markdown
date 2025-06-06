@@ -1,5 +1,5 @@
 {
-  "name": "@skzz-template/docs",
+  "name": "@vunk-markdown/docs",
   "type": "module",
   "scripts": {
     "dev": "vite",
