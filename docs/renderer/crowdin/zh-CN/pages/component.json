@@ -1,10 +1,10 @@
 {
-  "select": {
-    "text": "Select 选择器",
+  "basic": {
+    "text": "基础用法",
     "children": [
       {
-        "link": "/user-select-tables",
-        "text": "UserSelectTables"
+        "link": "/markdown",
+        "text": "Markdown"
       }
     ]
   }

@@ -14,6 +14,18 @@ importers:
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.8.3))
+      '@skzz/platform':
+        specifier: 0.0.0-alpha.76
+        version: 0.0.0-alpha.76
+      '@vuesri/core':
+        specifier: ^2.0.0
+        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.2)(vue@3.5.13(typescript@5.8.3))
+      '@vuesri/three':
+        specifier: 0.0.4
+        version: 0.0.4
+      '@vueuse/core':
+        specifier: ^13.2.0
+        version: 13.2.0(vue@3.5.13(typescript@5.8.3))
       '@vunk-markdown/api':
         specifier: workspace:*
         version: link:packages/api
@@ -29,27 +41,15 @@ importers:
       '@vunk-markdown/stores':
         specifier: workspace:*
         version: link:packages/stores
-      '@skzz/platform':
-        specifier: 0.0.0-alpha.76
-        version: 0.0.0-alpha.76
-      '@vunk/markdown':
-        specifier: workspace:*
-        version: link:packages/entry
-      '@vuesri/core':
-        specifier: ^2.0.0
-        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.4.4)(vue@3.5.13(typescript@5.8.3))
-      '@vuesri/three':
-        specifier: 0.0.4
-        version: 0.0.4
-      '@vueuse/core':
-        specifier: ^13.2.0
-        version: 13.2.0(vue@3.5.13(typescript@5.8.3))
       '@vunk/core':
-        specifier: 1.4.4
-        version: 1.4.4
+        specifier: 1.5.2
+        version: 1.5.2
       '@vunk/form':
         specifier: 2.9.1
         version: 2.9.1
+      '@vunk/markdown':
+        specifier: workspace:*
+        version: link:packages/entry
       '@vunk/plus':
         specifier: ^1.4.2
         version: 1.4.2
@@ -62,6 +62,9 @@ importers:
       element-plus:
         specifier: npm:element-plus@latest
         version: 2.9.10(vue@3.5.13(typescript@5.8.3))
+      markdown-it-async:
+        specifier: ^2.2.0
+        version: 2.2.0
       three:
         specifier: ^0.176.0
         version: 0.176.0
@@ -2906,8 +2909,8 @@ packages:
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
-  '@vunk/core@1.4.4':
-    resolution: {integrity: sha512-b/Oa/Xnx56xqtuXsUA2ZeYdt2NNJdwUyXggQImjvWJ9EwQceXuyxIUog52fXDphmx/GuHbNa5BYd3BoHzWHTZg==}
+  '@vunk/core@1.5.2':
+    resolution: {integrity: sha512-sPB56JyQTaLrXCYp4H5zV/4Ntl20yOChk+o1PjRnbDOYHccOGW4yAA75V1gr3zlpgpWSl1hjNreguEeecgk01Q==}
 
   '@vunk/form@2.9.1':
     resolution: {integrity: sha512-q3EBPRv/hCYziTcDCu4sq3VGETCSHtN4LNZf22Rqcet2xC7yNyPQn244F/zJbscm1jaJsLzjaU/ahWKBRpjfeQ==}
@@ -2983,7 +2986,7 @@ packages:
     engines: {node: '>=12'}
 
   ansi-styles@2.2.1:
-    resolution: {integrity: sha512-kmCevFghRiWM7HB5zTPULl4r9bVFSWjz62MhqizDGUrq2NWuNMQyuv4tHHoKJHs69M/MF64lEcHdYIocrdWQYA==}
+    resolution: {integrity: sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=}
     engines: {node: '>=0.10.0'}
 
   ansi-styles@4.3.0:
@@ -3182,7 +3185,7 @@ packages:
     engines: {node: '>=18'}
 
   boolbase@1.0.0:
-    resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -3285,7 +3288,7 @@ packages:
     engines: {node: '>=12'}
 
   chalk@1.1.3:
-    resolution: {integrity: sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=}
+    resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
     engines: {node: '>=0.10.0'}
 
   chalk@4.1.2:
@@ -3994,7 +3997,7 @@ packages:
     engines: {node: '>= 4'}
 
   encodeurl@1.0.2:
-    resolution: {integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=}
+    resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
     engines: {node: '>= 0.8'}
 
   encodeurl@2.0.0:
@@ -4076,10 +4079,10 @@ packages:
     engines: {node: '>=6'}
 
   escape-html@1.0.3:
-    resolution: {integrity: sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=}
+    resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
 
   escape-string-regexp@1.0.5:
-    resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
+    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
     engines: {node: '>=0.8.0'}
 
   escape-string-regexp@4.0.0:
@@ -11146,11 +11149,11 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.4.4)(vue@3.5.13(typescript@5.8.3))':
+  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.2)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@arcgis/core': 4.32.10
       '@vueuse/core': 10.11.1(vue@3.5.13(typescript@5.8.3))
-      '@vunk/core': 1.4.4
+      '@vunk/core': 1.5.2
       lodash-es: 4.17.21
       vue: 3.5.13(typescript@5.8.3)
     transitivePeerDependencies:
@@ -11264,7 +11267,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vunk/core@1.4.4': {}
+  '@vunk/core@1.5.2': {}
 
   '@vunk/form@2.9.1': {}
 

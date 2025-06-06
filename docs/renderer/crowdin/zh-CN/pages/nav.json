@@ -9,6 +9,6 @@
     "label": "组件",
     "value": "component",
     "path": "component",
-    "redirect": "component/user-select-tables"
+    "redirect": "component/markdown"
   }
 ]
