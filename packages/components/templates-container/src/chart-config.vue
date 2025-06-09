@@ -133,9 +133,8 @@ export default defineComponent({
         }
         return acc
       }, [])
-      if (theData.length === 0) {
-
-      }
+      if (theData.length === 0)
+        return
 
       setSeriesData(theData)
     })

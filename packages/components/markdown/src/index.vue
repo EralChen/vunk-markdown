@@ -46,7 +46,7 @@ export default defineComponent({
 
 <template>
   <VkRenderer :source="items">
-    <ElButton @click="handlelog">
+    <ElButton v-if="dev" @click="handlelog">
       log
     </ElButton>
     <template #placeholder>

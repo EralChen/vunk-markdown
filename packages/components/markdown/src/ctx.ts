@@ -8,6 +8,11 @@ export const props = {
     type: Array<string>,
     default: () => [],
   },
+
+  dev: {
+    type: Boolean,
+    default: false,
+  },
 }
 
 export const emits = {

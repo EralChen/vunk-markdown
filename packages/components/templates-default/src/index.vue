@@ -19,6 +19,7 @@ export default defineComponent({
             },
           }}
         </VkRendererTemplate>
+
         <VkRendererTemplate type="inline">
           {{
             default: (ctx) => {
@@ -44,7 +45,6 @@ export default defineComponent({
         </VkRendererTemplate>
 
         <VkRendererTemplate type="fence">
-
           {{
             default: ({ raw }) => {
               const lang = raw.info ? raw.info.split(' ')[0] : ''
@@ -61,6 +61,14 @@ export default defineComponent({
                 </pre>
               )
             },
+          }}
+        </VkRendererTemplate>
+
+        <VkRendererTemplate type="code_inline">
+          {{
+            default: ({ raw }) => (
+              <code>{raw.content}</code>
+            ),
           }}
         </VkRendererTemplate>
       </>
