@@ -6,7 +6,7 @@ export const props = {
 
   containers: {
     type: Array<string>,
-    default: () => [],
+    default: () => ['echarts'],
   },
 
   dev: {

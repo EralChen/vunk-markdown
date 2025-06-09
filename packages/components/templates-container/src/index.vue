@@ -2,7 +2,6 @@
 import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { VkEchart } from '@vunk/echarts'
 import { defineComponent } from 'vue'
-// import ChartConfig from './chart-config.vue'
 import ChartOptions from './chart-options.vue'
 
 export default defineComponent({
@@ -10,7 +9,7 @@ export default defineComponent({
   setup () {
     return () => (
       <>
-        <VkRendererTemplate type="echart">
+        <VkRendererTemplate type="echarts">
           {{
             default: (ctx) => {
               const children = ctx.raw.children

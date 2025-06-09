@@ -1,4 +1,4 @@
---- 
+---
 title: TemplatesContainer
 lang: zh-CN
 ---
@@ -7,11 +7,14 @@ lang: zh-CN
 
 TemplatesContainer
 
-
 ## Basic
 
-:::demo 
+:::demo
 templates-container/basic
 :::
 
-## TemplatesContainer 其他
+## TemplatesContainer 核心代码
+
+:::source
+components/templates-container/src/index.vue
+:::

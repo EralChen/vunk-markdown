@@ -13,7 +13,7 @@ This is a basic example of using **Markdown** in a Vue component.
 - \`Inline Code\`
 
 
-:::echart
+:::echarts
 \`\`\`json
 {
   "title": {
@@ -35,7 +35,7 @@ This is a basic example of using **Markdown** in a Vue component.
     }
   ]
 }
-  
+
 \`\`\`
 :::
 `
@@ -44,7 +44,7 @@ This is a basic example of using **Markdown** in a Vue component.
 <template>
   <VkMarkdown
     :source="source"
-    :containers="['echart']"
+    :containers="['echarts']"
   >
     <VkTemplatesDefault />
     <VkTemplatesContainer />

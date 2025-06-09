@@ -27,10 +27,6 @@ export default defineComponent({
       md.parse(props.source, {}),
     ))
 
-    // watchEffect(() => {
-    //   consola.log('Markdown tokens:', items.value)
-    // })
-
     const handlelog = () => {
       consola.log('Markdown tokens:', items.value)
     }

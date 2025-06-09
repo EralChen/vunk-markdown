@@ -3,7 +3,7 @@ import type { Token } from 'markdown-it'
 import type { Ref } from 'vue'
 import { useEchart } from '@vunk/echarts'
 import { noop } from '@vunk/shared/function'
-import { isEmptyObject } from '@vunk/shared/object'
+import { isEmptyObject, isObject } from '@vunk/shared/object'
 import { throttle } from 'lodash-es'
 import { computed, defineComponent, nextTick, ref, watchEffect } from 'vue'
 import { parse } from 'yaml'
@@ -57,20 +57,26 @@ export default defineComponent({
     })
 
     const setSeriesData = throttle((options) => {
-      echart.setOption(options)
+      try {
+        echart.setOption(options, true)
+      }
+      catch {
+        // 渲染时可能会出现错误，忽略
+      }
     }, 900, {
       trailing: true,
     })
 
     watchEffect(() => {
-      if (!options.value) {
+      if (!options.value || !isObject(options.value)) {
         return
       }
       if (isEmptyObject(options.value)) {
         return
       }
-
-      setSeriesData(options.value)
+      nextTick(() => {
+        setSeriesData(options.value)
+      })
     })
 
     return {

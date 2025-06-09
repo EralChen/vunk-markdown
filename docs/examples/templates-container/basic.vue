@@ -7,20 +7,38 @@ import { computed, ref } from 'vue'
 const data = `
 水系统设计采用三级循环架构，工艺水重复利用率达92%
 
-:::echart 
+:::echarts
 \`\`\`yaml
-title: 能源消耗结构
-unit: "%"
-type: 3
-data:
-  - key: 电解制氢
-    value: 48
-  - key: 生物质处理
-    value: 23
-  - key: 甲醇合成
-    value: 18
-  - key: 公用工程
-    value: 11
+title:
+  text: "ECharts 入门示例"
+
+tooltip: {}
+
+legend:
+  data:
+    - "销量"
+
+xAxis:
+  data:
+    - "衬衫"
+    - "羊毛衫"
+    - "雪纺衫"
+    - "裤子"
+    - "高跟鞋"
+    - "袜子"
+
+yAxis: {}
+
+series:
+  - name: "销量"
+    type: "bar"
+    data:
+      - 5
+      - 20
+      - 36
+      - 10
+      - 10
+      - 20
 \`\`\`
 :::
 
@@ -48,7 +66,7 @@ const interval = setInterval(() => {
 <template>
   <VkMarkdown
     :source="currentText"
-    :containers="['echart']"
+    :containers="['echarts']"
   >
     <VkTemplatesDefault />
     <VkTemplatesContainer />
