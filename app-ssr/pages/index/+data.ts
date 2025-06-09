@@ -1,5 +1,5 @@
 import type { ApiReturnType } from '@vunk/core'
-import { request } from '@vunk-markdown/shared/fetch/ssr'
+import { request } from '@vunk/shared/fetch'
 
 export type Data = ApiReturnType<typeof data>
 

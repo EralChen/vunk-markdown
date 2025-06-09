@@ -5,4 +5,5 @@ export const {
   Renderer: VkRenderer,
   Template: VkRendererTemplate,
   Templates: VkRendererTemplates,
+  useData: useRendererData,
 } = createStrategyRenderer('@vunk/markdown')

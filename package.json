@@ -31,7 +31,6 @@
     "@vunk-markdown/components": "workspace:*",
     "@vunk-markdown/composables": "workspace:*",
     "@vunk-markdown/shared": "workspace:*",
-    "@vunk-markdown/stores": "workspace:*",
     "@vunk/core": "1.5.2",
     "@vunk/echarts": "^0.0.3",
     "@vunk/form": "2.9.1",

@@ -38,9 +38,6 @@ importers:
       '@vunk-markdown/shared':
         specifier: workspace:*
         version: link:packages/shared
-      '@vunk-markdown/stores':
-        specifier: workspace:*
-        version: link:packages/stores
       '@vunk/core':
         specifier: 1.5.2
         version: 1.5.2
@@ -364,8 +361,6 @@ importers:
       '@types/qs':
         specifier: ^6.9.7
         version: 6.9.18
-
-  packages/stores: {}
 
   slidev:
     dependencies:
