@@ -13,7 +13,7 @@ Markdown
 markdown/basic
 ::: -->
 
-## 化工大纲 yaml
+<!-- ## 化工大纲 yaml
 
 :::demo
 markdown/yaml/index
@@ -21,6 +21,6 @@ markdown/yaml/index
 >>>subs
 [markdown/yaml/provider/index, markdown/yaml/provider/useRequest, markdown/yaml/provider/static-roles]
 >>>
-:::
+::: -->
 
 ## Markdown 其他

@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "jsx": "preserve",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "dom.iterable"
+    ],
+    "baseUrl": ".",
+    "rootDir": "../",
     "module": "esnext",
     "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
-    "allowJs": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "baseUrl": ".",
     "paths": {
       "#/*": [
         "*"
@@ -23,15 +24,16 @@
       "#r/*": [
         "renderer/*"
       ],
-      "#e/*":[
+      "#e/*": [
         "examples/*"
       ]
 
     },
-    "lib": [
-      "ESNext", "DOM", "dom.iterable"
-    ],
-    "rootDir": "../"
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*.ts",

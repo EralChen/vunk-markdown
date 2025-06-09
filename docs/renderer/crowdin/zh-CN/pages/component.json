@@ -7,5 +7,14 @@
         "text": "Markdown"
       }
     ]
+  },
+  "template": {
+    "text": "模板",
+    "children": [
+      {
+        "link": "/templates-container",
+        "text": "TemplatesContainer"
+      }
+    ]
   }
 }

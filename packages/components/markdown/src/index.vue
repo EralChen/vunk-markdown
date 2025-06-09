@@ -3,7 +3,8 @@ import { VkRenderer } from '@vunk-markdown/components/strategy-renderer'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
 import { consola } from 'consola'
 import MarkdownIt from 'markdown-it'
-import { computed, defineComponent, watchEffect } from 'vue'
+import MarkdownItContainer from 'markdown-it-container'
+import { computed, defineComponent } from 'vue'
 import { emits, props } from './ctx'
 import { tokensToTree } from './utils'
 
@@ -17,6 +18,11 @@ export default defineComponent({
   emits,
   setup (props, { expose }) {
     const md = MarkdownIt({})
+
+    props.containers.forEach((tag) => {
+      md.use(MarkdownItContainer, tag)
+    })
+
     const items = computed(() => tokensToTree(
       md.parse(props.source, {}),
     ))
@@ -25,10 +31,14 @@ export default defineComponent({
     //   consola.log('Markdown tokens:', items.value)
     // })
 
+    const handlelog = () => {
+      consola.log('Markdown tokens:', items.value)
+    }
     expose({})
 
     return {
       items,
+      handlelog,
     }
   },
 })
@@ -36,6 +46,9 @@ export default defineComponent({
 
 <template>
   <VkRenderer :source="items">
+    <ElButton @click="handlelog">
+      log
+    </ElButton>
     <template #placeholder>
       <VkTemplatesDefault />
     </template>

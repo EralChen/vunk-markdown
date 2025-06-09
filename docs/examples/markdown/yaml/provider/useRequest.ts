@@ -27,9 +27,6 @@ export async function createChatId (
 
 /**
  * @description: 发送消息
- * @param onmessage
- * @param data
- * @param abortController
  */
 async function agentRequest (
   onmessage: RestFetchReaderOnmessage,

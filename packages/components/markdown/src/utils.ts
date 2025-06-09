@@ -29,8 +29,11 @@ export function tokensToTree (tokens: Token[]): RendererToken[] {
 
     if (token.nesting === 1) {
       // 开始一个新 block
+
       const group: GroupToken = {
-        templateType: 'GroupToken',
+        templateType: token.info
+          ? token.info.trimEnd()
+          : 'GroupToken',
         tag: token.tag,
         open: token,
         close: null!, // 占位，稍后补全

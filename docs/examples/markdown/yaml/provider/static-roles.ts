@@ -1,15 +1,16 @@
 import type { __VkAgentChatProvider } from '@vunk/plus/components/agent-chat-provider'
 import type { __VkBubbleTemplates } from '@vunk/plus/components/bubble-templates'
+import type { VkMarkdownSource } from '../templates'
 
 export enum Role {
   User = 'user',
   Assistant = 'assistant',
-  ECharts = 'ECharts',
 }
 
 type RoleMedia = __VkAgentChatProvider.RoleMediaBasic
   & (
   __VkBubbleTemplates.RenderItem
+  | VkMarkdownSource
 )
 
 export const roleOptions: RoleMedia[] = [
@@ -23,9 +24,8 @@ export const roleOptions: RoleMedia[] = [
   {
     label: '助手',
     value: Role.Assistant,
-    isMarkdown: true,
     placement: 'start',
-    templateType: 'Typewriter',
+    templateType: 'VkMarkdown',
   },
 
 ]
