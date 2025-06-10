@@ -66,6 +66,7 @@ const interval = setInterval(() => {
 <template>
   <VkMarkdown
     :source="currentText"
+    :dev="true"
     :containers="['echarts']"
   >
     <VkTemplatesDefault />

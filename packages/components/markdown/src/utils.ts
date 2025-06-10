@@ -3,7 +3,10 @@ import type { GroupToken, RendererToken } from './types'
 /**
  * 将 Markdown-It 的扁平 Token 数组转为嵌套树状结构
  */
-export function tokensToTree (tokens: Token[]): RendererToken[] {
+export function tokensToTree (
+  tokens: Token[],
+  extracts: string[] = [],
+): RendererToken[] {
   const stack: GroupToken[] = []
   const result: RendererToken[] = []
 
@@ -29,15 +32,18 @@ export function tokensToTree (tokens: Token[]): RendererToken[] {
 
     if (token.nesting === 1) {
       // 开始一个新 block
-
       const group: GroupToken = {
-        templateType: token.info
-          ? token.info.trimEnd()
-          : 'GroupToken',
+        templateType: 'GroupToken',
         tag: token.tag,
         open: token,
         close: null!, // 占位，稍后补全
         children: [],
+      }
+      if (token.type.startsWith('container_')) {
+        group.templateType = `container:${token.info.trimEnd()}`
+      }
+      else if (extracts.includes(token.tag)) {
+        group.templateType = `token:${token.tag}`
       }
       stack.push(group)
     }

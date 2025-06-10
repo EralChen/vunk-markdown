@@ -5,5 +5,5 @@ export {
   VkRendererTemplate,
   VkRendererTemplates,
 } from '@vunk-markdown/components/strategy-renderer'
-export * from '@vunk-markdown/components/templates-container'
+// export * from '@vunk-markdown/components/templates-container'
 export * from '@vunk-markdown/components/templates-default'

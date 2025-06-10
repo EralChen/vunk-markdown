@@ -9,7 +9,7 @@ export default defineComponent({
   setup () {
     return () => (
       <>
-        <VkRendererTemplate type="echarts">
+        <VkRendererTemplate type="container:echarts">
           {{
             default: (ctx) => {
               const children = ctx.raw.children

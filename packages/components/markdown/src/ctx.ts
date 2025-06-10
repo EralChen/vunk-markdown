@@ -9,6 +9,11 @@ export const props = {
     default: () => ['echarts'],
   },
 
+  tokens: {
+    type: Array<string>,
+    default: () => [],
+  },
+
   dev: {
     type: Boolean,
     default: false,

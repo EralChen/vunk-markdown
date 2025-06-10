@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { VkMarkdown } from '@vunk-markdown/components/markdown'
 import { VkTemplatesContainer } from '@vunk-markdown/components/templates-container'
-import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
+import { VkMarkdown, VkTemplatesDefault } from '@vunk/markdown'
 
 const source = `
 # Basic Markdown Example
