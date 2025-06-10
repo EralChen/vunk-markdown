@@ -24,6 +24,11 @@
       {
         "link": "/render-tag",
         "text": "Render Tag 渲染标签"
+      },
+
+      {
+        "link": "/render-container",
+        "text": "Render Container 渲染容器"
       }
     ]
   }
