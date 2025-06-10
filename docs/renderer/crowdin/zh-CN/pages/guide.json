@@ -12,9 +12,14 @@
   "basic": {
     "text": "Basic 基础",
     "children": [
+
       {
         "link": "/parse",
         "text": "Parse 解析"
+      },
+      {
+        "link": "/render",
+        "text": "Render 渲染"
       }
     ]
   }

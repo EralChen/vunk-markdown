@@ -18,7 +18,7 @@ console.log('This is a code block')
 </script>
 
 <template>
-  <VkMarkdown :source="source" :dev="true">
+  <VkMarkdown :source="source">
     <VkTemplatesDefault />
   </VkMarkdown>
 </template>

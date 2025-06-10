@@ -46,9 +46,11 @@ export default defineComponent({
     <ElButton v-if="dev" @click="handlelog">
       log
     </ElButton>
+
     <template #placeholder>
       <VkTemplatesDefault />
     </template>
+
     <slot></slot>
   </VkRenderer>
 </template>
