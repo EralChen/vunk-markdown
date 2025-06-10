@@ -54,8 +54,8 @@ importers:
         specifier: 1.4.7
         version: 1.4.7
       '@vunk/shared':
-        specifier: 0.8.11
-        version: 0.8.11
+        specifier: 0.8.12
+        version: 0.8.12
       '@vunk/skzz':
         specifier: 0.0.0-alpha.111
         version: 0.0.0-alpha.111
@@ -68,6 +68,9 @@ importers:
       element-plus:
         specifier: npm:element-plus@latest
         version: 2.9.10(vue@3.5.13(typescript@5.8.3))
+      jsonrepair:
+        specifier: ^3.12.0
+        version: 3.12.0
       markdown-it-async:
         specifier: ^2.2.0
         version: 2.2.0
@@ -99,6 +102,9 @@ importers:
       '@lib-env/path':
         specifier: workspace:*
         version: link:internal/path
+      '@types/geojson':
+        specifier: ^7946.0.16
+        version: 7946.0.16
       '@types/gulp':
         specifier: ^4.0.17
         version: 4.0.17
@@ -2194,6 +2200,9 @@ packages:
   '@types/fs-extra@11.0.4':
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
 
+  '@types/geojson@7946.0.16':
+    resolution: {integrity: sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==}
+
   '@types/glob-stream@8.0.3':
     resolution: {integrity: sha512-vctgrT9AH/GK3TRaIbRUU0TZn12GBU4kzelZdPyJp1Sc8L/6Wrq21UrtN4+x4saqTg6COUIUtFV6JSYcVln/EQ==}
 
@@ -2974,8 +2983,8 @@ packages:
   '@vunk/plus@1.4.7':
     resolution: {integrity: sha512-U4L5lNu7bWZapFTw0CZjXpdOz+hvmNxP86ioVA98kwexfzZ/Bl+q+bVOhQhV89fZhYB5dz5J6gQy1Z7ysCsVRA==}
 
-  '@vunk/shared@0.8.11':
-    resolution: {integrity: sha512-Zd4KyW+XYsfoAoCAFhLgYM13NV8Ar90y6c+uYl1Z8vsgeHVOF1HfX8X7GFD9UAS76JnyIv0MULJrBoNxKGefIQ==}
+  '@vunk/shared@0.8.12':
+    resolution: {integrity: sha512-G/tOalnBgu0WiTvlyPPbRo4ZM4W+mDI8T+z1BZlbTxsEFDDyFckP1xMbrwMcl7opTaEuTcBJ6xc1lk5K8eXB+g==}
 
   '@vunk/skzz@0.0.0-alpha.111':
     resolution: {integrity: sha512-Vk/47vffp+RsFXIN0qjdZ943YibHqMuv9SHzsSXGQImXY8p3EO4nJgdXvEyig4FaKZZhIGxNXsYAO9VC8wl3YA==}
@@ -5315,6 +5324,10 @@ packages:
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+
+  jsonrepair@3.12.0:
+    resolution: {integrity: sha512-SWfjz8SuQ0wZjwsxtSJ3Zy8vvLg6aO/kxcp9TWNPGwJKgTZVfhNEQBMk/vPOpYCDFWRxD6QWuI6IHR1t615f0w==}
+    hasBin: true
 
   jstransformer@1.0.0:
     resolution: {integrity: sha512-C9YK3Rf8q6VAPDCCU9fnqo3mAfOH6vUGnMcP4AQAYIEpWtfGLpwOTmZ+igtdK5y+VvI2n3CyYSzy4Qh34eq24A==}
@@ -10351,6 +10364,8 @@ snapshots:
       '@types/jsonfile': 6.1.4
       '@types/node': 18.0.4
 
+  '@types/geojson@7946.0.16': {}
+
   '@types/glob-stream@8.0.3':
     dependencies:
       '@types/node': 18.0.4
@@ -11453,7 +11468,7 @@ snapshots:
 
   '@vunk/plus@1.4.7': {}
 
-  '@vunk/shared@0.8.11': {}
+  '@vunk/shared@0.8.12': {}
 
   '@vunk/skzz@0.0.0-alpha.111': {}
 
@@ -14154,6 +14169,8 @@ snapshots:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+
+  jsonrepair@3.12.0: {}
 
   jstransformer@1.0.0:
     dependencies:
