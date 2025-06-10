@@ -20,6 +20,10 @@
       {
         "link": "/render",
         "text": "Render 渲染"
+      },
+      {
+        "link": "/render-tag",
+        "text": "Render Tag 渲染标签"
       }
     ]
   }

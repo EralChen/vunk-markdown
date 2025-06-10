@@ -38,6 +38,12 @@ export default defineComponent({
           }}
         </VkRendererTemplate>
 
+        <VkRendererTemplate type="hr">
+          {{
+            default: () => <hr />,
+          }}
+        </VkRendererTemplate>
+
         <VkRendererTemplate type="text">
           {{
             default: ({ raw }) => raw.content,
