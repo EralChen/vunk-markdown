@@ -25,7 +25,7 @@ export default defineComponent({
 
     const items = computed(() => tokensToTree(
       md.parse(props.source, {}),
-      props.tokens,
+      props.tags,
     ))
 
     const handlelog = () => {

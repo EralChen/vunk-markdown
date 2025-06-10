@@ -40,10 +40,10 @@ export function tokensToTree (
         children: [],
       }
       if (token.type.startsWith('container_')) {
-        group.templateType = `container:${token.info.trimEnd()}`
+        group.templateType = `container:${token.info.split(' ')[0]}`
       }
       else if (extracts.includes(token.tag)) {
-        group.templateType = `token:${token.tag}`
+        group.templateType = `tag:${token.tag}`
       }
       stack.push(group)
     }

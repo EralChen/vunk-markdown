@@ -9,7 +9,7 @@ export const props = {
   },
 
   /**
-   * @description 支持的自定义容器类型
+   * @description 支持匹配的容器类型
    */
   containers: {
     type: Array<string>,
@@ -17,9 +17,9 @@ export const props = {
   },
 
   /**
-   * @description 需要特殊处理的 token 标签
+   * @description 支持匹配的 tag 标签
    */
-  tokens: {
+  tags: {
     type: Array<string>,
     default: () => [],
   },
