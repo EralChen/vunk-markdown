@@ -1,0 +1,1 @@
+const t={text:"基础用法",children:[{link:"/markdown",text:"Markdown"}]},e={text:"模板",children:[{link:"/templates-default",text:"TemplatesDefault"},{link:"/templates-container",text:"TemplatesContainer"}]},n={basic:t,template:e};export{t as basic,n as default,e as template};
