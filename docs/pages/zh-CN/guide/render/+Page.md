@@ -37,6 +37,11 @@ export interface SlotArguments {
    * 匹配到的原始数据
    */
   raw: SourceItem
+
+  /**
+   * 传递 source: SourceItem[] 可渲染内容
+   */
+  Renderer: Component
 }
 ```
 
