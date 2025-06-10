@@ -29,7 +29,7 @@ export default defineComponent({
     ))
 
     const handlelog = () => {
-      consola.log('Markdown tokens:', items.value)
+      consola.info('Markdown tokens:', items.value)
     }
     expose({})
 

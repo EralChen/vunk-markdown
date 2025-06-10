@@ -7,5 +7,15 @@
         "text": "Introduction 介绍"
       }
     ]
+  },
+
+  "basic": {
+    "text": "Basic 基础",
+    "children": [
+      {
+        "link": "/parse",
+        "text": "Parse 解析"
+      }
+    ]
   }
 }

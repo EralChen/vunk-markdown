@@ -1,4 +1,4 @@
---- 
+---
 title: TemplatesDefault
 lang: zh-CN
 ---
@@ -7,11 +7,16 @@ lang: zh-CN
 
 TemplatesDefault
 
-
 ## Basic
 
-:::demo 
+:::demo
 templates-default/basic
 :::
 
-## TemplatesDefault 其他
+## 自定义
+
+## TemplatesDefault 核心代码
+
+:::source
+components/templates-default/src/index.vue
+:::

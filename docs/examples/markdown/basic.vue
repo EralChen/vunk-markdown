@@ -17,7 +17,7 @@ You can write _italic_, **bold**, and even [links](https://example.com).
 + Nested list item
   + Sub-item 1
   + Sub-item 2
-You can also include code blocks, like this one:
+
 `
 
 const currentIndex = ref(0)
