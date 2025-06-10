@@ -1,4 +1,4 @@
-# Example Ymal
+# Example YAML
 
 ## Basic
 

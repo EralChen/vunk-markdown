@@ -1,3 +1,7 @@
+import type { AnyFunc } from '@vunk/shared'
+import type { PropType } from 'vue'
+import { noop } from '@vunk/shared/function'
+
 export const props = {
 
   /**
@@ -22,6 +26,14 @@ export const props = {
   tags: {
     type: Array<string>,
     default: () => [],
+  },
+
+  /**
+   * @description MarkdownIt 回调, 第一个参数为 MarkdownIt 实例
+   */
+  markdownItSetup: {
+    type: Function as PropType<AnyFunc>,
+    default: noop,
   },
 
   /**

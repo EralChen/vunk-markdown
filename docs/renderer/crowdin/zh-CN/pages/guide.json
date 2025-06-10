@@ -38,7 +38,11 @@
     "children": [
       {
         "link": "/example-yaml",
-        "text": "yaml"
+        "text": "YAML"
+      },
+      {
+        "link": "/example-gis",
+        "text": "GIS"
       }
     ]
   }

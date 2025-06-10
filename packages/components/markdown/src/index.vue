@@ -19,6 +19,8 @@ export default defineComponent({
   setup (props, { expose }) {
     const md = MarkdownIt({})
 
+    props.markdownItSetup!(md)
+
     props.containers.forEach((tag) => {
       md.use(MarkdownItContainer, tag)
     })
