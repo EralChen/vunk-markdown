@@ -19,7 +19,7 @@ importers:
         version: 0.0.0-alpha.76
       '@vuesri/core':
         specifier: ^2.0.0
-        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.2)(vue@3.5.13(typescript@5.8.3))
+        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.3)(vue@3.5.13(typescript@5.8.3))
       '@vuesri/three':
         specifier: 0.0.4
         version: 0.0.4
@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/shared
       '@vunk/core':
-        specifier: 1.5.2
-        version: 1.5.2
+        specifier: 1.5.3
+        version: 1.5.3
       '@vunk/echarts':
         specifier: ^0.0.3
         version: 0.0.3
@@ -2959,8 +2959,8 @@ packages:
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
-  '@vunk/core@1.5.2':
-    resolution: {integrity: sha512-sPB56JyQTaLrXCYp4H5zV/4Ntl20yOChk+o1PjRnbDOYHccOGW4yAA75V1gr3zlpgpWSl1hjNreguEeecgk01Q==}
+  '@vunk/core@1.5.3':
+    resolution: {integrity: sha512-sATff+qkxsfXfGxiWWhKcJdKPFZTIeZLrBjnwZeq6xbpqMtZ16mP3l7F3m3I1v2xh2BsYbJC3GM4tb0FMe1BDA==}
 
   '@vunk/echarts@0.0.3':
     resolution: {integrity: sha512-0vXzQWTRfRCgh/mKZ7cqrhNOUg3Smvizm3NU7TScVbC9b1GN9mh+L59n5Gqti47qFAqDbigESS7mG6wV/EqqBA==}
@@ -11325,11 +11325,11 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.2)(vue@3.5.13(typescript@5.8.3))':
+  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.3)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@arcgis/core': 4.32.10
       '@vueuse/core': 10.11.1(vue@3.5.13(typescript@5.8.3))
-      '@vunk/core': 1.5.2
+      '@vunk/core': 1.5.3
       lodash-es: 4.17.21
       vue: 3.5.13(typescript@5.8.3)
     transitivePeerDependencies:
@@ -11443,7 +11443,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vunk/core@1.5.2': {}
+  '@vunk/core@1.5.3': {}
 
   '@vunk/echarts@0.0.3': {}
 
