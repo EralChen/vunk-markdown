@@ -31,5 +31,16 @@
         "text": "Render Container 渲染容器"
       }
     ]
+  },
+
+  "example": {
+    "text": "Example 用例",
+    "children": [
+      {
+        "link": "/example-yaml",
+        "text": "yaml"
+      }
+    ]
   }
+
 }

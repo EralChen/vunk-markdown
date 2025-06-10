@@ -3,8 +3,8 @@ import { VkClientOnly } from '@vunk/core/components/client-only'
 import { restFetch } from '@vunk/shared/fetch'
 import ElmentPlus, { ID_INJECTION_KEY } from 'element-plus'
 
-import 'uno.css'
 import '#/src/styles'
+import 'uno.css'
 
 restFetch.baseURL = 'https://llm.geosophon.com/api'
 

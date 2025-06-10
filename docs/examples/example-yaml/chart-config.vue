@@ -2,7 +2,6 @@
 import type { NormalObject } from '@vunk/shared'
 import type { EChartsOption } from 'echarts'
 import type { Token } from 'markdown-it'
-import type { Ref } from 'vue'
 import { useEchart } from '@vunk/echarts'
 import { noop } from '@vunk/shared/function'
 import { throttle } from 'lodash-es'
@@ -20,11 +19,9 @@ export default defineComponent({
       type: Array<any>,
       default: () => [],
     },
-    renderer: null,
   },
   setup (props) {
     const echart = useEchart()
-    const configRef = ref() as Ref<HTMLDivElement>
 
     const rawString = ref('')
 
@@ -142,18 +139,7 @@ export default defineComponent({
     nextTick(() => {
       echart.setOption(options)
     })
-    return {
-      configRef,
-    }
+    return () => null
   },
 })
 </script>
-
-<template>
-  <div v-show="false" ref="configRef">
-    <component
-      :is="renderer"
-      :source="source"
-    ></component>
-  </div>
-</template>
