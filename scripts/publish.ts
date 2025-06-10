@@ -10,19 +10,19 @@ import { replaceRight } from '@vunk/shared/string'
 import { series } from 'gulp'
 
 export default series(
-  gulpTask('update:vision', async () => {
-    const fileObj = readJsonSync(entryPackage) as { version: string, module: string }
+  // gulpTask('update:vision', async () => {
+  //   const fileObj = readJsonSync(entryPackage) as { version: string, module: string }
 
-    // 默认小版本+1
-    const versionList = fileObj.version.split('.')
-    const sVersion = versionList.at(-1)
-    if (sVersion) {
-      versionList[versionList.length - 1] = `${+sVersion + 1}`
-    }
-    fileObj.version = versionList.join('.')
+  //   // 默认小版本+1
+  //   const versionList = fileObj.version.split('.')
+  //   const sVersion = versionList.at(-1)
+  //   if (sVersion) {
+  //     versionList[versionList.length - 1] = `${+sVersion + 1}`
+  //   }
+  //   fileObj.version = versionList.join('.')
 
-    writeJsonSync(entryPackage, fileObj, 2)
-  }),
+  //   writeJsonSync(entryPackage, fileObj, 2)
+  // }),
   gulpTask('destPkg', async () => {
     const distPkgFile = path.resolve(distDir, './package.json')
 
@@ -94,8 +94,9 @@ export default series(
   }),
 
   gulpTask('publish', async () => {
+    // --tag alpha
     run(
-      'npm publish --tag alpha --registry https://registry.npmjs.org --access public',
+      'npm publish  --registry https://registry.npmjs.org --access public',
       distDir,
     )
   }),
