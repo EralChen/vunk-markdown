@@ -1,9 +1,14 @@
-<script lang="ts" setup>
-import { ref } from 'vue'
+<script lang="ts">
+import { navigate } from 'vike/client/router'
+import { defineComponent, onBeforeMount } from 'vue'
 
-const data = ref('home')
+export default defineComponent({
+  setup () {
+    onBeforeMount(() => {
+      navigate(`${import.meta.env.BASE_URL}zh-CN/guide/introduction`)
+    })
+
+    return () => null
+  },
+})
 </script>
-
-<template>
-  <div>{{ data }}</div>
-</template>
