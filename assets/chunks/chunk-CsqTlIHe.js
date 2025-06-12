@@ -1,0 +1,10 @@
+import{_ as b,b as v,V as k}from"./chunk-CCZJ3fyv.js";import{_ as x}from"./chunk-DweTdXzo.js";import{d as w,r as C,c as g,x as m,s as i,o as a,j as t,g as e,u as p,b as R,F as h,y as V}from"./chunk-BDqMgIU1.js";import"./chunk-CWUYlh1e.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const l=`
+### Table
+
+---
+
+| Header 1 | Code Header 2 |
+| --------- | -------------- |
+| Row 1    | Code Row 1  |
+| Row 2    | Code Row 2  |
+`,ft=w({__name:"basic",setup(y){const r=C(0),n=g(()=>l.slice(0,r.value+1)),s=setInterval(()=>{r.value<l.length?r.value++:clearInterval(s)},50);return(B,I)=>{const c=m("el-table-column"),u=m("el-table");return a(),i(p(k),{source:n.value,tags:["table"]},{default:t(()=>[e(p(b)),e(p(v),{type:"tag:table"},{default:t(({raw:_})=>[e(x,{source:_.children},{default:t(({data:d,columns:f})=>[e(u,{data:d},{default:t(()=>[(a(!0),R(h,null,V(f,o=>(a(),i(c,{key:o.prop,prop:o.prop,label:o.label},null,8,["prop","label"]))),128))]),_:2},1032,["data"])]),_:2},1032,["source"])]),_:1})]),_:1},8,["source"])}}});export{ft as default};
