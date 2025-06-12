@@ -1,13 +1,14 @@
 <script lang="ts">
-import { redirect } from 'vike/abort'
-import { defineComponent } from 'vue'
+import { navigate } from 'vike/client/router'
+import { defineComponent, nextTick, onBeforeMount } from 'vue'
 
 export default defineComponent({
   setup () {
-    throw redirect(
-      `${import.meta.env.BASE_URL}zh-CN/guide/introduction`,
-      301,
-    )
+    onBeforeMount(() => {
+      nextTick(() => {
+        navigate(`${import.meta.env.BASE_URL}zh-CN/guide/introduction`, { overwriteLastHistoryEntry: true })
+      })
+    })
   },
 })
 </script>
