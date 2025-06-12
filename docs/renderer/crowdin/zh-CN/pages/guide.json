@@ -29,6 +29,11 @@
       {
         "link": "/render-container",
         "text": "Render Container 渲染容器"
+      },
+
+      {
+        "link": "/shared-templates",
+        "text": "Shared Templates 共享模板"
       }
     ]
   },
