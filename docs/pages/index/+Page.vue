@@ -1,14 +1,13 @@
 <script lang="ts">
-import { navigate } from 'vike/client/router'
-import { defineComponent, onBeforeMount } from 'vue'
+import { redirect } from 'vike/abort'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   setup () {
-    onBeforeMount(() => {
-      navigate(`${import.meta.env.BASE_URL}zh-CN/guide/introduction`)
-    })
-
-    return () => null
+    throw redirect(
+      `${import.meta.env.BASE_URL}zh-CN/guide/introduction`,
+      301,
+    )
   },
 })
 </script>
