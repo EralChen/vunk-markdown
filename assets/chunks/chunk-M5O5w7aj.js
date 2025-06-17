@@ -1,0 +1,1 @@
+import{b1 as r}from"./chunk-DM6Pdl6C.js";const b={getObjectId:t=>t.objectId,getAttributes:t=>t.attributes,getAttribute:(t,e)=>t.attributes[e],cloneWithGeometry:(t,e)=>new r(e,t.attributes,null,t.objectId),getGeometry:t=>t.geometry,getCentroid:(t,e)=>t.ensureCentroid(e)};export{b as e};
