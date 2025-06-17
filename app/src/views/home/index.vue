@@ -1,6 +1,6 @@
 <script lang="ts">
-import { rTestData } from '@/api/test'
 import { defineComponent, ref } from 'vue'
+import { rTestData } from '@/api/test'
 
 export default defineComponent({
   setup () {
