@@ -48,6 +48,10 @@
       {
         "link": "/example-gis",
         "text": "GIS"
+      },
+      {
+        "link": "/example-antx",
+        "text": "AntX 集成使用"
       }
     ]
   }
