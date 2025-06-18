@@ -34,6 +34,11 @@
       {
         "link": "/shared-templates",
         "text": "Shared Templates 共享模板"
+      },
+
+      {
+        "link": "/markdown-it-setup",
+        "text": "Markdown It Setup 扩展"
       }
     ]
   },

@@ -5,13 +5,22 @@ import type { GroupToken, RendererToken } from './types'
  */
 export function tokensToTree (
   tokens: Token[],
-  extracts: string[] = [],
+  tags: string[] = [],
+  fences: string[] = [],
 ): RendererToken[] {
   const stack: GroupToken[] = []
   const result: RendererToken[] = []
 
   const addToParent = (item: RendererToken) => {
-    item.templateType ??= item.type
+    if (!item.templateType) {
+      item.templateType = item.type
+      if (item.type === 'fence') { // 标记代码块类型
+        const info = item.info.split(' ')[0]
+        if (fences.includes(info)) {
+          item.templateType = `fence:${info}`
+        }
+      }
+    }
 
     if (item.children) {
       item.children = tokensToTree(item.children as Token[])
@@ -42,7 +51,7 @@ export function tokensToTree (
       if (token.type.startsWith('container_')) {
         group.templateType = `container:${token.info.split(' ')[0]}`
       }
-      else if (extracts.includes(token.tag)) {
+      else if (tags.includes(token.tag)) {
         group.templateType = `tag:${token.tag}`
       }
       stack.push(group)

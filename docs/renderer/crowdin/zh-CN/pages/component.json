@@ -18,6 +18,10 @@
       {
         "link": "/templates-container",
         "text": "TemplatesContainer"
+      },
+      {
+        "link": "/template-mermaid",
+        "text": "TemplateMermaid"
       }
     ]
   }

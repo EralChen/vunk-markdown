@@ -21,6 +21,14 @@ export const props = {
   },
 
   /**
+   * @description 支持匹配的代码块类型
+   */
+  fences: {
+    type: Array<string>,
+    default: () => ['mermaid'],
+  },
+
+  /**
    * @description 支持匹配的 tag 标签
    */
   tags: {
