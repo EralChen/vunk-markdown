@@ -55,6 +55,7 @@ function render () {
   <div :id="domId1"></div>
   <div :id="domId2"></div>
   <div
+    class="template-mermaid"
     v-html="htmlString"
   ></div>
 </template>

@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { VkRendererTemplate } from '@vunk/core/components/strategy-renderer'
+import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { VkEchart } from '@vunk/echarts'
 import { defineComponent } from 'vue'
 import Core from './core.vue'
