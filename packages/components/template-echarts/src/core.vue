@@ -1,7 +1,6 @@
 <script lang="ts">
 import type { NormalObject } from '@vunk/core'
 import type { Token } from 'markdown-it'
-import type { Ref } from 'vue'
 import { useEchart } from '@vunk/echarts'
 import { noop } from '@vunk/shared/function'
 import { isEmptyObject, isObject } from '@vunk/shared/object'
@@ -16,12 +15,9 @@ export default defineComponent({
       type: Array<any>,
       default: () => [],
     },
-    renderer: null,
   },
   setup (props) {
     const echart = useEchart()
-    const configRef = ref() as Ref<HTMLDivElement>
-
     const theToken = ref<Token | undefined>()
 
     watchEffect(async () => {
@@ -30,8 +26,8 @@ export default defineComponent({
       await nextTick()
 
       const raw = props.source.find(
-        (item: Token) => item.info.includes('yaml')
-          || item.info.includes('json'),
+        (item: Token) => item.info?.includes('yaml')
+          || item.info?.includes('json'),
       ) as Token | undefined
 
       theToken.value = raw
@@ -102,18 +98,7 @@ export default defineComponent({
       })
     })
 
-    return {
-      configRef,
-    }
+    return () => null
   },
 })
 </script>
-
-<template>
-  <div v-show="false" ref="configRef">
-    <component
-      :is="renderer"
-      :source="source"
-    ></component>
-  </div>
-</template>
