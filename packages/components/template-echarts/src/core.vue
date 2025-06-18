@@ -26,8 +26,8 @@ export default defineComponent({
       await nextTick()
 
       const raw = props.source.find(
-        (item: Token) => item.info.includes('yaml')
-          || item.info.includes('json'),
+        (item: Token) => item.info?.includes('yaml')
+          || item.info?.includes('json'),
       ) as Token | undefined
 
       theToken.value = raw

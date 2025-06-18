@@ -34,18 +34,34 @@
       {
         "link": "/render-container",
         "text": "Render Container 渲染容器"
-      },
+      }
 
+    ]
+  },
+
+  "optimize": {
+    "text": "Optimize 优化",
+    "children": [
       {
         "link": "/shared-templates",
         "text": "Shared Templates 共享模板"
       },
+      {
+        "link": "/load-templates",
+        "text": "Load Templates 按需装载"
+      }
+    ]
+  },
 
+  "advanced": {
+    "text": "Advanced 高级",
+    "children": [
       {
         "link": "/markdown-it-setup",
         "text": "Markdown It Setup 扩展"
       }
     ]
+
   },
 
   "example": {

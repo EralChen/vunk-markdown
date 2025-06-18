@@ -49,11 +49,6 @@ introduction/basic
 + [TemplatesDefault](https://github.com/EralChen/vunk-markdown/blob/master/packages/components/templates-default/src/index.vue) 用于渲染常规 Markdown 内容
 + [TemplatesContainer](https://github.com/EralChen/vunk-markdown/blob/master/packages/components/templates-container/src/index.vue) 用于渲染容器类组件, 需要 `Markdown props containers` 显式声明
 
-:::tip
-在流式数据中, 你可以使用 `yaml` 代码块, 来展示 `echarts` 的渲染过程
-[查看示例](../../component/templates-container/+Page.md#basic)
-:::
-
 ## 🌟 为什么选择 @vunk/markdown？
 
 - **🎯 专为现代应用设计**：完美适配 Vue3 生态和组件化开发
