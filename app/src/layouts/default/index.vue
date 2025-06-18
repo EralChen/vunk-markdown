@@ -48,7 +48,7 @@ onBeforeRouteUpdate(() => {
       >
         <template #one>
           <TagsView></TagsView>
-          <BreadcrumbVue></BreadcrumbVue>
+          <!-- <BreadcrumbVue></BreadcrumbVue> -->
         </template>
 
         <ElScrollbar ref="scrollbarNode">
@@ -67,11 +67,6 @@ onBeforeRouteUpdate(() => {
 .layout-default>.vk-duplex-calc-two {
   background-color: var(--el-fill-color);
 }
-
-/* 【?】该行导致横向滚动失效 */
-/* .layout-default .el-scrollbar__view {
-  content-visibility: auto;
-} */
 </style>
 
 <style>

@@ -1,8 +1,0 @@
-html, body, #app {
-  height: 100%;
-}
-
-
-#app {
-  --layout-top-height: 60px;
-}

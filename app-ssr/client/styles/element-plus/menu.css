@@ -1,9 +1,0 @@
-.el-menu--vertical .el-menu-item [class^=el-icon] {
-  font-size: 12px;
-}
-.el-menu--vertical .el-sub-menu .el-icon {
-  font-size: 12px;
-}
-.el-menu--vertical .el-sub-menu .el-menu-item:not(.is-active) {
-  opacity: 0.6;
-}

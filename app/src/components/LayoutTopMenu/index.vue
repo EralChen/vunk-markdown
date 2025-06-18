@@ -8,18 +8,18 @@ import { ElMenu } from 'element-plus'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { routes as constRoutes } from '@/router'
-import { usePermissionStore } from '@/stores/permission'
+
 import { useViewsStore } from '@/stores/views'
 
 const emit = defineEmits({
   load: null,
 })
 const route = useRoute()
-const permissionStore = usePermissionStore()
+
 const viewsStore = useViewsStore()
 
 const navRoutes = computed(() => {
-  return filterDeep([...permissionStore.routes, ...constRoutes], (v) => {
+  return filterDeep([...constRoutes], (v) => {
     if (v.meta?.header) {
       // 暂存原始 children
       v.meta._children = [...v.children]
