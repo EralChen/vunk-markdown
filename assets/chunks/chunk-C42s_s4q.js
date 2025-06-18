@@ -1,0 +1,1 @@
+import{at as s,ag as o,au as f,av as i}from"./chunk-DJw_0V8B.js";function c(n,r,g,e){for(var t=-1,u=n==null?0:n.length;++t<u;){var a=n[t];r(e,a,g(a),n)}return e}function h(n,r,g,e){return s(n,function(t,u,a){r(e,t,g(t),a)}),e}function A(n,r){return function(g,e){var t=f(g)?c:h,u=r?r():{};return t(g,n,o(e),u)}}function p(n){return n&&n.length?i(n):[]}export{A as c,p as u};

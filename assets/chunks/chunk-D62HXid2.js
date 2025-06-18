@@ -1,0 +1,1 @@
+import{_ as s}from"./chunk-Ds3W_0BB.js";import{_ as o,V as t}from"./chunk-BGIBMkBR.js";import{d as n,c as _,o as m,w as c,a,r as f,u as e}from"./chunk-DJw_0V8B.js";const k=n({__name:"layout",setup(l){return(r,p)=>(m(),_(e(t),null,{default:c(()=>[a(e(s)),a(e(o)),f(r.$slots,"default")]),_:3}))}});export{k as _};

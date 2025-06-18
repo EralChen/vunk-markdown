@@ -1,0 +1,1 @@
+import{_ as a}from"./chunk-CNF_1Ppc.js";/* empty css              */import{d as o,c as t,o as r,u as m}from"./chunk-DJw_0V8B.js";const e=o({name:"VkTemplatesContainer",__name:"index",setup(n){return(s,p)=>(r(),t(m(a)))}});e.install=n=>{n.component(e.name||"VkTemplatesContainer",e)};export{e as _};
