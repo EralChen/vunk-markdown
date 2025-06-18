@@ -14,17 +14,17 @@ ${txt}
 
 const currentIndex = ref(10)
 const currentText = computed(() => {
-  return data.slice(0, currentIndex.value + 5)
+  return data.slice(0, currentIndex.value)
 })
 
 const interval = setInterval(() => {
   if (currentIndex.value < data.length) {
-    currentIndex.value++
+    currentIndex.value += 2
   }
   else {
     clearInterval(interval)
   }
-}, 50)
+}, 60)
 </script>
 
 <template>

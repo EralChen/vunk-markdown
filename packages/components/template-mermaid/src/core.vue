@@ -58,3 +58,12 @@ function render () {
     v-html="htmlString"
   ></div>
 </template>
+
+<style>
+/* 隐藏 Mermaid 错误时的弹窗 */
+body > [id^="dv-"] svg{
+  position: fixed;
+  top: 0;
+  left: -9999px;
+}
+</style>

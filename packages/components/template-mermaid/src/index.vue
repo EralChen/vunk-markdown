@@ -17,8 +17,8 @@ export default defineComponent({
     props.initialize && mermaid.initialize({
       startOnLoad: false,
       suppressErrorRendering: true,
-
     })
+
     return {}
   },
 })

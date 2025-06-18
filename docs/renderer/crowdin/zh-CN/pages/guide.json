@@ -27,6 +27,11 @@
       },
 
       {
+        "link": "/render-fence",
+        "text": "Render Fence 渲染围栏"
+      },
+
+      {
         "link": "/render-container",
         "text": "Render Container 渲染容器"
       },
