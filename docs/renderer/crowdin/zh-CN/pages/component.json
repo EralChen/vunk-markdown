@@ -12,6 +12,19 @@
     "text": "模板",
     "children": [
       {
+        "link": "/template-echarts",
+        "text": "TemplateEcharts"
+      },
+      {
+        "link": "/template-mermaid",
+        "text": "TemplateMermaid"
+      }
+    ]
+  },
+  "templates": {
+    "text": "模板集合",
+    "children": [
+      {
         "link": "/templates-default",
         "text": "TemplatesDefault"
       },
@@ -20,8 +33,8 @@
         "text": "TemplatesContainer"
       },
       {
-        "link": "/template-mermaid",
-        "text": "TemplateMermaid"
+        "link": "/templates-fence",
+        "text": "TemplatesFence"
       }
     ]
   }
