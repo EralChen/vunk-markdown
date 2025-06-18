@@ -1,12 +1,12 @@
-import { series } from 'gulp'
-import { gulpTask } from '@vunk/shared/function'
-import fsp from 'fs/promises'
+import fsp from 'node:fs/promises'
 import { distDir } from '@lib-env/path'
+import { gulpTask } from '@vunk/shared/function'
+import { series } from 'gulp'
 
 export default series(
   gulpTask('clear-dist', async () => {
     await fsp.rm(distDir, {
-      recursive: true, 
+      recursive: true,
       force: true,
     })
   }),
