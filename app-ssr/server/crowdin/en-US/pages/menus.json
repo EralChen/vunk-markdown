@@ -1,5 +1,0 @@
-[
-  { "pid": "#", "id": "view", "label": "View" },
-  { "pid": "view", "id": "map-view", "label": "MapView" },
-  { "pid": "view", "id": "scene-view", "label": "SceneView" }
-]

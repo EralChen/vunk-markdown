@@ -1,23 +1,21 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { rTestData } from '@/api/test'
+<script lang="ts" setup>
+import { VkMarkdown } from '@vunk/markdown'
+import { ref } from 'vue'
 
-export default defineComponent({
-  setup () {
-    const testName = ref('')
-    rTestData().then((res) => {
-      testName.value = res.name
-    })
-
-    return {
-      testName,
-    }
-  },
-})
+const data = ref(`
+# Welcome to Vunk Markdown
+This is a simple markdown example to demonstrate the usage of the VkMarkdown component.
+## Features
+- **Easy to use**: Just pass your markdown content as a prop.
+- **Customizable**: You can style the markdown content as needed.
+`)
 </script>
 
 <template>
-  <div class="bg-test">
-    {{ testName }}
-  </div>
+  <page-x>
+    <VkMarkdown
+      :source="data"
+    >
+    </VkMarkdown>
+  </page-x>
 </template>

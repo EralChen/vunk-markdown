@@ -2,12 +2,12 @@
 import type { MenuOptions } from '@imengyu/vue3-context-menu'
 import type { AnyFunc } from '@vunk/core'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
-import { useViewsStore } from '@/stores/views'
 import { Close } from '@element-plus/icons-vue'
 import { ContextMenu, ContextMenuItem } from '@imengyu/vue3-context-menu'
 import { ElScrollbar } from 'element-plus'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useViewsStore } from '@/stores/views'
 import ActiveEffect from './active-effect.vue'
 import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css'
 

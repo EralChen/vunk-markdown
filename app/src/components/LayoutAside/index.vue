@@ -9,7 +9,6 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { routes as constRoutes } from '@/router'
 import { useLayoutStore } from '@/stores/layout'
-import { usePermissionStore } from '@/stores/permission'
 import { useViewsStore } from '@/stores/views'
 import CollapseVue from './Collapse.vue'
 
@@ -19,12 +18,11 @@ const emit = defineEmits({
 
 const viewsStore = useViewsStore()
 const layoutStore = useLayoutStore()
-const permissionStore = usePermissionStore()
 const route = useRoute()
 const menuNode = ref() as Ref<{ open: AnyFunc }>
 
 const finalRoutes = computed(() => {
-  return viewsStore.currentBaseView?.children || [...permissionStore.routes, ...constRoutes]
+  return viewsStore.currentBaseView?.children || [...constRoutes]
 })
 
 function initOpenMenu () {

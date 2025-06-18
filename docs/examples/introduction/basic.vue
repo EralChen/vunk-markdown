@@ -6,12 +6,6 @@ const source = `
 # Basic Markdown Example
 This is a basic example of using **Markdown** in a Vue component.
 
-## Features
-- **Bold Text**
-- *Italic Text*
-- \`Inline Code\`
-
-
 :::echarts
 \`\`\`json
 {

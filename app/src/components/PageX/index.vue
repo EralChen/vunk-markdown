@@ -4,8 +4,7 @@
 
 <template>
   <div
-    plr-page
-    pb-page
+    pa-page
     class="h-page"
   >
     <div class="bg-bg-overlay h-100% relative">

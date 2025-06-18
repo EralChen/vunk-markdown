@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { useLayoutStore } from '@/stores/layout'
+import { VkSvgIcon } from '@vunk/core'
 import { ElDropdown, ElSlider } from 'element-plus'
+import { useLayoutStore } from '@/stores/layout'
 
 const layoutStore = useLayoutStore()
 // const currentSize = ref(14)
@@ -8,10 +9,10 @@ const layoutStore = useLayoutStore()
 
 <template>
   <ElDropdown trigger="click">
-    <SvgIcon
+    <span
       icon-class="size"
       class="cursor-pointer text-white"
-    ></SvgIcon>
+    >Ts</span>
     <template #dropdown>
       <div
         w-200px

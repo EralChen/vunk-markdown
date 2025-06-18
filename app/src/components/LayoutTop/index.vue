@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { useThemeStore } from '@/stores/theme'
 import { logout } from '@skzz/platform/api/login'
 import DarkSwitch from '_c/DarkSwitch/index.vue'
 import SizeCtrl from '_c/SizeCtrl/index.vue'
 import { ElAvatar } from 'element-plus'
 import { defineAsyncComponent } from 'vue'
+import { useThemeStore } from '@/stores/theme'
 
 defineEmits({
   load: null,
@@ -23,7 +23,7 @@ const { layoutTopClassName } = useThemeStore()
   >
     <div sk-flex="row_center">
       <div class="layout-top-title f-xxxl font-600 plr-l ptb-s">
-        智子开发平台
+        @vunk/markdown
       </div>
       <LayoutTopMenu
         @load="$emit('load')"
