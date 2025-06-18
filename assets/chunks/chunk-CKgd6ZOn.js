@@ -1,0 +1,32 @@
+import{_ as n}from"./chunk-LuICNYpM.js";import{_ as c,c as l,a as d}from"./chunk-0xyWlKZa.js";/* empty css              */import{d as _,c as i,o as m,w as p,a as r,u as t,k as e,x as u}from"./chunk-CjSkIgyx.js";import"./chunk-BUeUzySU.js";import"./chunk-SqlbPPT2.js";import"./chunk-DB56luzt.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const f={class:"warning-box"},h=`
+
+# Hello ECharts
+
+This is a simple ECharts example.
+
+:::echarts
+\`\`\`json
+{
+  "title": {
+    "text": "ECharts 入门示例"
+  },
+  "tooltip": {},
+  "legend": {
+    "data": ["销量"]
+  },
+  "xAxis": {
+    "data": ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+  },
+  "yAxis": {},
+  "series": [
+    {
+      "name": "销量",
+      "type": "bar",
+      "data": [5, 20, 36, 10, 10, 20]
+    }
+  ]
+}
+
+\`\`\`
+:::
+`,st=_({__name:"echarts",setup(x){return(k,o)=>(m(),i(t(d),{source:h,containers:["warning","echarts"]},{default:p(()=>[r(t(c)),r(t(n)),r(t(l),{type:"container:warning"},{default:p(({raw:a,Renderer:s})=>[e("div",f,[o[0]||(o[0]=e("h4",null,"⚠️ 警告",-1)),(m(),i(u(s),{source:a.children},null,8,["source"]))])]),_:1})]),_:1}))}});export{st as default};
