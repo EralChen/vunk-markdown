@@ -1,25 +1,24 @@
-import { series } from 'gulp'
-import { gulpTask } from '@vunk/shared/function'
-import fsp from 'fs/promises'
-import fs from 'fs'
+import fs from 'node:fs'
+import fsp from 'node:fs/promises'
+import path from 'node:path'
 import { distDir, distTypesDir } from '@lib-env/path'
-import path from 'path'
-import { isEqual } from 'lodash'
+import { gulpTask } from '@vunk/shared/function'
 import { readdirAsFlattenedTree } from '@vunk/shared/node/fs'
+import { series } from 'gulp'
+import { isEqual } from 'lodash'
 
 export default series(
 
   gulpTask('to-dist-type', async () => {
     const distDirFiles = await fsp.readdir(
-      distDir, 
+      distDir,
       { withFileTypes: true },
     )
 
     // 找到 dist 下打包目录
-    const coreDirNames = distDirFiles.filter(item => {
-      return item.isDirectory() 
-      && 
-      path.resolve(distDir, item.name) !== distTypesDir
+    const coreDirNames = distDirFiles.filter((item) => {
+      return item.isDirectory()
+        && path.resolve(distDir, item.name) !== distTypesDir
     }).map(item => item.name)
 
     // 根据打包目录找到 distTypesDir 中对应的目录
@@ -41,7 +40,6 @@ export default series(
         continue
       }
 
-
       while (
         isExist
         && !isSameDirStructure(coreDir, typeDir)
@@ -56,16 +54,14 @@ export default series(
           typeDir: ${typeDir}
           can not find typeDir
         `)
-      } else {
+      }
+      else {
         // 拷贝类型声明文件
         await fsp.cp(typeDir, coreDir, {
           recursive: true,
         })
       }
-
-
     }
-
   }),
 
   gulpTask('clear types', async () => {
@@ -75,7 +71,6 @@ export default series(
     })
   }),
 )
-
 
 function isSameDirStructure (
   dir1: string,
@@ -91,16 +86,16 @@ function isSameDirStructure (
   const dir1SubSet = new Set(
     dir1FlattenedTree
       .filter( // 过滤掉入口文件外的其他文件
-        item => item.isDirectory 
-        || item.filename.includes('index'),
+        item => item.isDirectory
+          || item.filename.includes('index'),
       )
       .map(item => item.filename.split('.').shift()),
   )
   const dir2SubSet = new Set(
     dir2FlattenedTree
       .filter(
-        item => item.isDirectory 
-        || item.filename.includes('index'),
+        item => item.isDirectory
+          || item.filename.includes('index'),
       )
       .map(item => item.filename.split('.').shift()),
   )

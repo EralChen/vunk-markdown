@@ -10,6 +10,7 @@
     "@vunk/gsap": "0.0.0-alpha.3",
     "deepdash-es": "^5.3.9",
     "gsap": "^3.13.0",
+    "monaco-editor": "^0.52.2",
     "prism-theme-vars": "^0.2.5"
   },
   "devDependencies": {
