@@ -22,7 +22,7 @@ importers:
         version: 0.0.0-alpha.76
       '@vuesri/core':
         specifier: ^2.0.0
-        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.4)(vue@3.5.16(typescript@5.8.3))
+        version: 2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.6.1)(vue@3.5.16(typescript@5.8.3))
       '@vuesri/three':
         specifier: 0.0.4
         version: 0.0.4
@@ -42,8 +42,8 @@ importers:
         specifier: workspace:*
         version: link:packages/shared
       '@vunk/core':
-        specifier: 1.5.4
-        version: 1.5.4
+        specifier: 1.6.1
+        version: 1.6.1
       '@vunk/echarts':
         specifier: ^0.0.3
         version: 0.0.3
@@ -2790,8 +2790,8 @@ packages:
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
-  '@vunk/core@1.5.4':
-    resolution: {integrity: sha512-kFi/wVXjWrqPHGjKxz7GL7Anc9eqJqfKIyotPKDobhmmSVS+s1BgxI9qZZS174Bcy1f1q23XOFbq3Lx6i5TAeA==}
+  '@vunk/core@1.6.1':
+    resolution: {integrity: sha512-Tdv/ZuQy3ExCP9rO6x1gJkgy4i0aw0S5w7ET5AvAflsYl5rXgQ6U3JnfUgpTPTv29V/wejgzPRMP3J1znOylMQ==}
 
   '@vunk/echarts@0.0.3':
     resolution: {integrity: sha512-0vXzQWTRfRCgh/mKZ7cqrhNOUg3Smvizm3NU7TScVbC9b1GN9mh+L59n5Gqti47qFAqDbigESS7mG6wV/EqqBA==}
@@ -2969,7 +2969,7 @@ packages:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
 
   asynckit@0.4.0:
-    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
 
   atob@2.1.2:
     resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
@@ -10139,11 +10139,11 @@ snapshots:
 
   '@vue/shared@3.5.16': {}
 
-  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.5.4)(vue@3.5.16(typescript@5.8.3))':
+  '@vuesri/core@2.0.0(@arcgis/core@4.32.10)(@vunk/core@1.6.1)(vue@3.5.16(typescript@5.8.3))':
     dependencies:
       '@arcgis/core': 4.32.10
       '@vueuse/core': 10.11.1(vue@3.5.16(typescript@5.8.3))
-      '@vunk/core': 1.5.4
+      '@vunk/core': 1.6.1
       lodash-es: 4.17.21
       vue: 3.5.16(typescript@5.8.3)
     transitivePeerDependencies:
@@ -10234,7 +10234,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vunk/core@1.5.4': {}
+  '@vunk/core@1.6.1': {}
 
   '@vunk/echarts@0.0.3': {}
 
