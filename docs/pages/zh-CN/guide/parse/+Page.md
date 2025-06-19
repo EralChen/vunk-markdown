@@ -22,7 +22,7 @@ graph LR
 
 ## 🎮 交互式解析器
 
-点击 **log** 按钮查看 Markdown 文本的解析结果，了解不同语法元素是如何被解析的。
+点击 **log** 按钮, 在 debug 控制台查看 Markdown 文本的解析结果，了解不同语法元素是如何被解析的。
 
 :::demo
 parse/basic
