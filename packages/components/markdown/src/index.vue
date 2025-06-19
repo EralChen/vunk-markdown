@@ -1,7 +1,6 @@
 <script lang="ts">
 import { VkRenderer } from '@vunk-markdown/components/strategy-renderer'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
-import { consola } from 'consola'
 import MarkdownIt from 'markdown-it'
 import MarkdownItContainer from 'markdown-it-container'
 import { computed, defineComponent } from 'vue'
@@ -32,20 +31,22 @@ export default defineComponent({
     ))
 
     const handlelog = () => {
-      consola.info('Markdown tokens:', items.value)
+      // eslint-disable-next-line no-console
+      console.debug('Markdown tokens:', items.value)
     }
     expose({})
 
     return {
       items,
       handlelog,
+      md,
     }
   },
 })
 </script>
 
 <template>
-  <VkRenderer :source="items">
+  <VkRenderer :source="items" :md="md">
     <ElButton v-if="dev" @click="handlelog">
       log
     </ElButton>
