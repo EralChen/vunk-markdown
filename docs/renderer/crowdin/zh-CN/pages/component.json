@@ -18,6 +18,10 @@
       {
         "link": "/template-mermaid",
         "text": "TemplateMermaid"
+      },
+      {
+        "link": "/template-form",
+        "text": "TemplateForm"
       }
     ]
   },
