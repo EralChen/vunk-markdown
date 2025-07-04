@@ -13,8 +13,24 @@ export default defineComponent({
               const Renderer = ctx.Renderer
               const Tag = ctx.raw.tag
               const children = ctx.raw.children
+
+              const attrs: Array<[ string, string ] | [string]> = ctx.raw.open.attrs ?? []
+
+              const attrsObj = attrs.reduce((acc, [key, value]) => {
+                if (typeof value === 'undefined') {
+                  acc[key] = true
+                  return acc
+                }
+                acc[key] = value
+                return acc
+              }, {} as Record<string, string | boolean>)
+
               return (
-                <Tag><Renderer source={children}></Renderer></Tag>
+                <Tag
+                  {...attrsObj}
+                >
+                  <Renderer source={children}></Renderer>
+                </Tag>
               )
             },
           }}
