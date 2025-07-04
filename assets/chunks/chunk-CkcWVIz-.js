@@ -1,0 +1,1 @@
+import{b as e,a as r}from"./chunk-oeh2ZB13.js";import{d as t,c as s,o as c,w as p,a as m,u as n}from"./chunk-BY4ynHbL.js";e.install=a=>{a.component(e.name||"VkRendererTemplate",e)};const k=t({__name:"index",setup(a){return(_,d)=>(c(),s(n(e),{type:"VkMarkdown"},{default:p(({props:o})=>[m(n(r),{source:o.content},null,8,["source"])]),_:1}))}});export{k as _};

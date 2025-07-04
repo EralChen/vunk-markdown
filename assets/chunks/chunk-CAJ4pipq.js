@@ -1,0 +1,24 @@
+import{p as w}from"./chunk-DhlMO-F1.js";import{_ as l,s as B,g as S,t as F,q as z,a as P,b as W,F as v,K as T,e as D,z as _,G as A,H as E,l as x}from"./chunk-yHd6jWnI.js";import{p as N}from"./chunk-h3orlpQw.js";import"./chunk-oeh2ZB13.js";import"./chunk-BY4ynHbL.js";import"./chunk-B5uEfUiB.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */import"./chunk-D5iaQeiq.js";/* empty css              */import"./chunk-D_LxRWsH.js";import"./chunk-CyvCMg7-.js";import"./chunk-kdcb9Phi.js";import"./chunk-DEUUqN8w.js";var C={packet:[]},h=structuredClone(C),L=E.packet,Y=l(()=>{const t=v({...L,...A().packet});return t.showBits&&(t.paddingY+=10),t},"getConfig"),G=l(()=>h.packet,"getPacket"),H=l(t=>{t.length>0&&h.packet.push(t)},"pushWord"),I=l(()=>{_(),h=structuredClone(C)},"clear"),u={pushWord:H,getPacket:G,getConfig:Y,clear:I,setAccTitle:W,getAccTitle:P,setDiagramTitle:z,getDiagramTitle:F,getAccDescription:S,setAccDescription:B},K=1e4,M=l(t=>{w(t,u);let e=-1,o=[],n=1;const{bitsPerRow:s}=u.getConfig();for(let{start:r,end:a,label:d}of t.blocks){if(a&&a<r)throw new Error(`Packet block ${r} - ${a} is invalid. End must be greater than start.`);if(r!==e+1)throw new Error(`Packet block ${r} - ${a??r} is not contiguous. It should start from ${e+1}.`);for(e=a??r,x.debug(`Packet block ${r} - ${e} with label ${d}`);o.length<=s+1&&u.getPacket().length<K;){const[f,p]=O({start:r,end:a,label:d},n,s);if(o.push(f),f.end+1===n*s&&(u.pushWord(o),o=[],n++),!p)break;({start:r,end:a,label:d}=p)}}u.pushWord(o)},"populate"),O=l((t,e,o)=>{if(t.end===void 0&&(t.end=t.start),t.start>t.end)throw new Error(`Block start ${t.start} is greater than block end ${t.end}.`);return t.end+1<=e*o?[t,void 0]:[{start:t.start,end:e*o-1,label:t.label},{start:e*o,end:t.end,label:t.label}]},"getNextFittingBlock"),q={parse:l(async t=>{const e=await N("packet",t);x.debug(e),M(e)},"parse")},R=l((t,e,o,n)=>{const s=n.db,r=s.getConfig(),{rowHeight:a,paddingY:d,bitWidth:f,bitsPerRow:p}=r,b=s.getPacket(),i=s.getDiagramTitle(),m=a+d,c=m*(b.length+1)-(i?0:a),g=f*p+2,k=T(e);k.attr("viewbox",`0 0 ${g} ${c}`),D(k,c,g,r.useMaxWidth);for(const[$,y]of b.entries())U(k,y,$,r);k.append("text").text(i).attr("x",g/2).attr("y",c-m/2).attr("dominant-baseline","middle").attr("text-anchor","middle").attr("class","packetTitle")},"draw"),U=l((t,e,o,{rowHeight:n,paddingX:s,paddingY:r,bitWidth:a,bitsPerRow:d,showBits:f})=>{const p=t.append("g"),b=o*(n+r)+r;for(const i of e){const m=i.start%d*a+1,c=(i.end-i.start+1)*a-s;if(p.append("rect").attr("x",m).attr("y",b).attr("width",c).attr("height",n).attr("class","packetBlock"),p.append("text").attr("x",m+c/2).attr("y",b+n/2).attr("class","packetLabel").attr("dominant-baseline","middle").attr("text-anchor","middle").text(i.label),!f)continue;const g=i.end===i.start,k=b-2;p.append("text").attr("x",m+(g?c/2:0)).attr("y",k).attr("class","packetByte start").attr("dominant-baseline","auto").attr("text-anchor",g?"middle":"start").text(i.start),g||p.append("text").attr("x",m+c).attr("y",k).attr("class","packetByte end").attr("dominant-baseline","auto").attr("text-anchor","end").text(i.end)}},"drawWord"),X={draw:R},j={byteFontSize:"10px",startByteColor:"black",endByteColor:"black",labelColor:"black",labelFontSize:"12px",titleColor:"black",titleFontSize:"14px",blockStrokeColor:"black",blockStrokeWidth:"1",blockFillColor:"#efefef"},J=l(({packet:t}={})=>{const e=v(j,t);return`
+	.packetByte {
+		font-size: ${e.byteFontSize};
+	}
+	.packetByte.start {
+		fill: ${e.startByteColor};
+	}
+	.packetByte.end {
+		fill: ${e.endByteColor};
+	}
+	.packetLabel {
+		fill: ${e.labelColor};
+		font-size: ${e.labelFontSize};
+	}
+	.packetTitle {
+		fill: ${e.titleColor};
+		font-size: ${e.titleFontSize};
+	}
+	.packetBlock {
+		stroke: ${e.blockStrokeColor};
+		stroke-width: ${e.blockStrokeWidth};
+		fill: ${e.blockFillColor};
+	}
+	`},"styles"),qt={parser:q,db:u,renderer:X,styles:J};export{qt as diagram};
