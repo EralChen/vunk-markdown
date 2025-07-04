@@ -4,13 +4,14 @@ import { VkTemplateForm } from '@vunk-markdown/components/template-form'
 import { setData } from '@vunk/core'
 import { VkfRendererData } from '@vunk/form/components/renderer-data'
 import { VkMarkdown } from '@vunk/markdown'
+import { ElForm } from 'element-plus'
 import { computed, ref } from 'vue'
 import formItems from './vunk-form.json?raw'
 
 const data = `
 # Template Form Example
 :::form
-\`\`\`json { "label-position": "top" }
+\`\`\`json 
 ${formItems}
 \`\`\`
 :::
@@ -39,9 +40,11 @@ const interval = setInterval(() => {
     <br />
     {{ formdata }}
   </p>
-  <VkfRendererData :data="formdata" @set-data="setData(formdata, $event)">
-    <VkMarkdown :source="currentText" :containers="['form']">
-      <VkTemplateForm></VkTemplateForm>
-    </VkMarkdown>
-  </VkfRendererData>
+  <ElForm :model="formdata" label-width="100px">
+    <VkfRendererData :data="formdata" @set-data="setData(formdata, $event)">
+      <VkMarkdown :source="currentText" :containers="['form']">
+        <VkTemplateForm></VkTemplateForm>
+      </VkMarkdown>
+    </VkfRendererData>
+  </ElForm>
 </template>
