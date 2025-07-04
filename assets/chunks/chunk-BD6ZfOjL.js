@@ -1,0 +1,1 @@
+import{n}from"./chunk-Cokl53l_.js";import"./chunk-ByDRce6i.js";async function e(t){const{urlOriginal:o}=t;o.endsWith("/")&&n(o.slice(0,-1))}const a=Object.freeze(Object.defineProperty({__proto__:null,onHydrationEnd:e},Symbol.toStringTag,{value:"Module"}));export{a as i};

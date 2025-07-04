@@ -1,0 +1,15 @@
+import{_ as p,c as m,a as e}from"./chunk-DeQ1c-zB.js";import{_ as a}from"./chunk-Duhrlz_e.js";import{d as s,c,o as n,w as i,a as t,u as r}from"./chunk-Cokl53l_.js";import"./chunk-nmmj9OIr.js";import"./chunk-ByDRce6i.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const d=`
+### Table
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Row 1    | Row 1    |
+| Row 2    | Row 2    | Row 2    |
+
+### Code 
+
+\`\`\`javascript
+console.log('This is a code block')
+\`\`\`
+
+111
+`,ro=s({__name:"basic",setup(_){return(l,f)=>(n(),c(r(e),{source:d,dev:!0},{default:i(()=>[t(r(p)),t(r(m),{type:"fence"},{default:i(({raw:o})=>[t(a,{code:o.content,lang:o.info?o.info.split(" ")[0]:""},null,8,["code","lang"])]),_:1})]),_:1}))}});export{ro as default};
