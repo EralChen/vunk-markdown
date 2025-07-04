@@ -23,7 +23,7 @@ export function tokensToTree (
     }
 
     if (item.children) {
-      item.children = tokensToTree(item.children as Token[])
+      item.children = tokensToTree(item.children as Token[], tags, fences)
     }
 
     if (stack.length > 0) {
@@ -48,6 +48,9 @@ export function tokensToTree (
         close: null!, // 占位，稍后补全
         children: [],
       }
+
+      console.log('开始新分组:', group, tags)
+
       if (token.type.startsWith('container_')) {
         group.templateType = `container:${token.info.split(' ')[0]}`
       }
