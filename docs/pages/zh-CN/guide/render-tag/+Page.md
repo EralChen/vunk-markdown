@@ -8,9 +8,9 @@
 
 下面展示如何将 Markdown 表格转换为 Element Plus 的表格组件：
 
-<!-- :::demo
+:::demo
 render-tag/basic
-::: -->
+:::
 
 ## A
 
