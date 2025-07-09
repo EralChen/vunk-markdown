@@ -49,8 +49,6 @@ export function tokensToTree (
         children: [],
       }
 
-      console.log('开始新分组:', group, tags)
-
       if (token.type.startsWith('container_')) {
         group.templateType = `container:${token.info.split(' ')[0]}`
       }
