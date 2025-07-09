@@ -1,3 +1,0 @@
-import{m as r}from"./chunk-CcU4FseM.js";import{g as o}from"./chunk-B_I7Twk5.js";/*! All material copyright ESRI, All Rights Reserved, unless otherwise specified.
-See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.
-v3.1.0 */function a(n){return n==="l"?"m":"s"}function u(n,t,e){!n[t]&&!n[e]&&r.warn(`[${n.el.localName}] "${t.toString()}" or "${e.toString()}" is required.`)}function f(n){return n.hidden||n.itemHidden}async function s(n){if(await n.componentOnReady(),!!o())return n.requestUpdate(),new Promise(t=>requestAnimationFrame(()=>t()))}export{f,s as m,a as o,u};

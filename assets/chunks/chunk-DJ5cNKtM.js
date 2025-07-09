@@ -1,0 +1,30 @@
+import{p as V}from"./chunk-CNSfjfSd.js";import{Q as y,T as z,aB as U,_ as c,g as j,s as q,a as H,b as K,t as Q,q as Z,l as F,c as J,F as X,K as Y,a4 as tt,e as et,z as rt,H as at}from"./chunk-DePdCfyT.js";import{p as it}from"./chunk-mJsM0lmL.js";import{d as P}from"./chunk-CNWkoISQ.js";import{o as nt}from"./chunk-DO4YpjyP.js";import"./chunk-4h1kw80C.js";import"./chunk-DdHotv1K.js";import"./chunk-DODhI9iV.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */import"./chunk-D5iaQeiq.js";/* empty css              */import"./chunk-Ddj4h4Lw.js";import"./chunk-C-q0r4BU.js";import"./chunk-C2o7kKcX.js";import"./chunk-8jVAXBW_.js";import"./chunk-A0kIFD9x.js";function ot(t,r){return r<t?-1:r>t?1:r>=t?0:NaN}function st(t){return t}function lt(){var t=st,r=ot,f=null,o=y(0),m=y(z),x=y(0);function n(e){var a,l=(e=U(e)).length,u,A,h=0,p=new Array(l),i=new Array(l),v=+o.apply(this,arguments),w=Math.min(z,Math.max(-z,m.apply(this,arguments)-v)),g,T=Math.min(Math.abs(w)/l,x.apply(this,arguments)),$=T*(w<0?-1:1),d;for(a=0;a<l;++a)(d=i[p[a]=a]=+t(e[a],a,e))>0&&(h+=d);for(r!=null?p.sort(function(S,C){return r(i[S],i[C])}):f!=null&&p.sort(function(S,C){return f(e[S],e[C])}),a=0,A=h?(w-l*$)/h:0;a<l;++a,v=g)u=p[a],d=i[u],g=v+(d>0?d*A:0)+$,i[u]={data:e[u],index:a,value:d,startAngle:v,endAngle:g,padAngle:T};return i}return n.value=function(e){return arguments.length?(t=typeof e=="function"?e:y(+e),n):t},n.sortValues=function(e){return arguments.length?(r=e,f=null,n):r},n.sort=function(e){return arguments.length?(f=e,r=null,n):f},n.startAngle=function(e){return arguments.length?(o=typeof e=="function"?e:y(+e),n):o},n.endAngle=function(e){return arguments.length?(m=typeof e=="function"?e:y(+e),n):m},n.padAngle=function(e){return arguments.length?(x=typeof e=="function"?e:y(+e),n):x},n}var pt=at.pie,G={sections:new Map,showData:!1},b=G.sections,W=G.showData,ct=structuredClone(pt),mt=c(()=>structuredClone(ct),"getConfig"),ut=c(()=>{b=new Map,W=G.showData,rt()},"clear"),dt=c(({label:t,value:r})=>{b.has(t)||(b.set(t,r),F.debug(`added new section: ${t}, with value: ${r}`))},"addSection"),gt=c(()=>b,"getSections"),ft=c(t=>{W=t},"setShowData"),ht=c(()=>W,"getShowData"),R={getConfig:mt,clear:ut,setDiagramTitle:Z,getDiagramTitle:Q,setAccTitle:K,getAccTitle:H,setAccDescription:q,getAccDescription:j,addSection:dt,getSections:gt,setShowData:ft,getShowData:ht},vt=c((t,r)=>{V(t,r),r.setShowData(t.showData),t.sections.map(r.addSection)},"populateDb"),St={parse:c(async t=>{const r=await it("pie",t);F.debug(r),vt(r,R)},"parse")},yt=c(t=>`
+  .pieCircle{
+    stroke: ${t.pieStrokeColor};
+    stroke-width : ${t.pieStrokeWidth};
+    opacity : ${t.pieOpacity};
+  }
+  .pieOuterCircle{
+    stroke: ${t.pieOuterStrokeColor};
+    stroke-width: ${t.pieOuterStrokeWidth};
+    fill: none;
+  }
+  .pieTitleText {
+    text-anchor: middle;
+    font-size: ${t.pieTitleTextSize};
+    fill: ${t.pieTitleTextColor};
+    font-family: ${t.fontFamily};
+  }
+  .slice {
+    font-family: ${t.fontFamily};
+    fill: ${t.pieSectionTextColor};
+    font-size:${t.pieSectionTextSize};
+    // fill: white;
+  }
+  .legend text {
+    fill: ${t.pieLegendTextColor};
+    font-family: ${t.fontFamily};
+    font-size: ${t.pieLegendTextSize};
+  }
+`,"getStyles"),xt=yt,At=c(t=>{const r=[...t.entries()].map(o=>({label:o[0],value:o[1]})).sort((o,m)=>m.value-o.value);return lt().value(o=>o.value)(r)},"createPieArcs"),wt=c((t,r,f,o)=>{F.debug(`rendering pie chart
+`+t);const m=o.db,x=J(),n=X(m.getConfig(),x.pie),e=40,a=18,l=4,u=450,A=u,h=Y(r),p=h.append("g");p.attr("transform","translate("+A/2+","+u/2+")");const{themeVariables:i}=x;let[v]=tt(i.pieOuterStrokeWidth);v??=2;const w=n.textPosition,g=Math.min(A,u)/2-e,T=P().innerRadius(0).outerRadius(g),$=P().innerRadius(g*w).outerRadius(g*w);p.append("circle").attr("cx",0).attr("cy",0).attr("r",g+v/2).attr("class","pieOuterCircle");const d=m.getSections(),S=At(d),C=[i.pie1,i.pie2,i.pie3,i.pie4,i.pie5,i.pie6,i.pie7,i.pie8,i.pie9,i.pie10,i.pie11,i.pie12],D=nt(C);p.selectAll("mySlices").data(S).enter().append("path").attr("d",T).attr("fill",s=>D(s.data.label)).attr("class","pieCircle");let N=0;d.forEach(s=>{N+=s}),p.selectAll("mySlices").data(S).enter().append("text").text(s=>(s.data.value/N*100).toFixed(0)+"%").attr("transform",s=>"translate("+$.centroid(s)+")").style("text-anchor","middle").attr("class","slice"),p.append("text").text(m.getDiagramTitle()).attr("x",0).attr("y",-400/2).attr("class","pieTitleText");const M=p.selectAll(".legend").data(D.domain()).enter().append("g").attr("class","legend").attr("transform",(s,k)=>{const E=a+l,L=E*D.domain().length/2,_=12*a,B=k*E-L;return"translate("+_+","+B+")"});M.append("rect").attr("width",a).attr("height",a).style("fill",D).style("stroke",D),M.data(S).append("text").attr("x",a+l).attr("y",a-l).text(s=>{const{label:k,value:E}=s.data;return m.getShowData()?`${k} [${E}]`:k});const I=Math.max(...M.selectAll("text").nodes().map(s=>s?.getBoundingClientRect().width??0)),O=A+e+a+l+I;h.attr("viewBox",`0 0 ${O} ${u}`),et(h,u,O,n.useMaxWidth)},"draw"),Ct={draw:wt},Ae={parser:St,db:R,renderer:Ct,styles:xt};export{Ae as diagram};
