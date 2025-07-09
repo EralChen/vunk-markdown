@@ -1,24 +1,28 @@
 <script lang="ts" setup>
+import type MarkdownIt from 'markdown-it'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
 import { VkMarkdown } from '@vunk/markdown'
 
 const source = `
-### Table
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Row 1    | Row 1    | Row 1    |
-| Row 2    | Row 2    | Row 2    |
-
-### Code 
-
-\`\`\`javascript
-console.log('This is a code block')
-\`\`\`
+[baidu](https://www.baidu.com)
 `
+
+function handleMarkdownItSetup (md: MarkdownIt) {
+  md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    // 添加 target="_blank" 属性
+    token.attrSet('target', '_blank')
+
+    return self.renderToken(tokens, idx, options)
+  }
+}
 </script>
 
 <template>
-  <VkMarkdown :source="source">
+  <VkMarkdown
+    :source="source"
+    :markdown-it-setup="handleMarkdownItSetup"
+  >
     <VkTemplatesDefault />
   </VkMarkdown>
 </template>

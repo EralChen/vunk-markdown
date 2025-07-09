@@ -78,3 +78,33 @@ export function tokensToTree (
 
   return result
 }
+
+/**
+ * 将嵌套树状结构 拍平成扁平数组
+ */
+export function treeToTokens (
+  tree: RendererToken[],
+): Token[] {
+  const result: Token[] = []
+
+  const traverse = (node: RendererToken) => {
+    if (node.templateType === 'GroupToken') {
+      result.push(node.open)
+      if (node.children) {
+        for (const child of node.children) {
+          traverse(child)
+        }
+      }
+      result.push(node.close)
+    }
+    else {
+      result.push(node as Token)
+    }
+  }
+
+  for (const node of tree) {
+    traverse(node)
+  }
+
+  return result
+}

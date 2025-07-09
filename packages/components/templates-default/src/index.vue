@@ -1,6 +1,9 @@
 <script lang="tsx">
+import type { __VkMarkdown } from '@vunk-markdown/components/markdown'
+import type MarkdownIt from 'markdown-it'
 import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { defineComponent } from 'vue'
+import { parseTag } from './utils'
 
 export default defineComponent({
   name: 'VkTemplatesDefault',
@@ -10,25 +13,21 @@ export default defineComponent({
         <VkRendererTemplate type="GroupToken">
           {{
             default: (ctx) => {
+              const raw = ctx.raw as __VkMarkdown.GroupToken
               const Renderer = ctx.Renderer
-              const Tag = ctx.raw.tag
               const children = ctx.raw.children
 
-              const attrs: Array<[ string, string ] | [string]> = ctx.raw.open.attrs ?? []
+              const md = ctx.md as MarkdownIt
+              const { tagName: Tag, attributes: attrsObj } = parseTag(md, raw)
 
-              const attrsObj = attrs.reduce((acc, [key, value]) => {
-                if (typeof value === 'undefined') {
-                  acc[key] = true
-                  return acc
-                }
-                acc[key] = value
-                return acc
-              }, {} as Record<string, string | boolean>)
+              if (!Tag) {
+                return (
+                  <Renderer source={children}></Renderer>
+                )
+              }
 
               return (
-                <Tag
-                  {...attrsObj}
-                >
+                <Tag {...attrsObj}>
                   <Renderer source={children}></Renderer>
                 </Tag>
               )
