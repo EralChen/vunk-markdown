@@ -16,7 +16,7 @@ export default defineComponent({
   props,
   emits,
   setup (props, { expose }) {
-    const md = MarkdownIt({})
+    const md = MarkdownIt(props.markdownItOptions)
 
     props.markdownItSetup!(md)
 
