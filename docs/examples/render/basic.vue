@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import { VkMarkdown, VkRendererTemplate, VkTemplatesDefault } from '@vunk/markdown'
+import { computed, ref } from 'vue'
 import ShikiFence from './shiki-fence.vue'
 
-const source = `
+const text = `
 ### Table
 | Header 1 | Header 2 | Header 3 |
 |----------|----------|----------|
@@ -13,14 +14,33 @@ const source = `
 
 \`\`\`javascript
 console.log('This is a code block')
+console.log('This is a code block')
+console.log('This is a code block')
+console.log('This is a code block')
+console.log('This is a code block')
+console.log('This is a code block')
 \`\`\`
 
 111
 `
+
+const currentIndex = ref(0)
+const currentText = computed(() => {
+  return text.slice(0, currentIndex.value + 1)
+})
+
+const interval = setInterval(() => {
+  if (currentIndex.value < text.length) {
+    currentIndex.value += 5
+  }
+  else {
+    clearInterval(interval)
+  }
+}, 50)
 </script>
 
 <template>
-  <VkMarkdown :source="source" :dev="true">
+  <VkMarkdown :source="currentText" :dev="true">
     <VkTemplatesDefault />
 
     <VkRendererTemplate type="fence">
