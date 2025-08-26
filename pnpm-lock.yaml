@@ -54,8 +54,8 @@ importers:
         specifier: workspace:*
         version: link:packages/entry
       '@vunk/plus':
-        specifier: 1.4.7
-        version: 1.4.7
+        specifier: 1.7.2
+        version: 1.7.2
       '@vunk/shared':
         specifier: 0.8.14
         version: 0.8.14
@@ -2739,8 +2739,8 @@ packages:
   '@vunk/gsap@0.0.0-alpha.3':
     resolution: {integrity: sha512-UTyP4VmeAoMY+eab/OhFyyXrd21W4zgQuV2px4r/5x8iox187yf3AH42zuI//ub+loVTgE74iu9MQasTJ8NdMw==}
 
-  '@vunk/plus@1.4.7':
-    resolution: {integrity: sha512-U4L5lNu7bWZapFTw0CZjXpdOz+hvmNxP86ioVA98kwexfzZ/Bl+q+bVOhQhV89fZhYB5dz5J6gQy1Z7ysCsVRA==}
+  '@vunk/plus@1.7.2':
+    resolution: {integrity: sha512-Id/ZtGyDEDVoOCtYvmCTXA/68gLy2XB4SJzXQisaYPzF8tmX4YMlZk0DVUd6s6veFR5U6QtKI0WDeh2f1BYuIw==}
 
   '@vunk/shared@0.8.14':
     resolution: {integrity: sha512-zvyuLyoC2fpPN7BLZAh0vRHxVUgmYo8gJnsH7c+XKssxxBo/qOUB5KWeSHZidsvFyfIsSLqWJvqZoTyt7UzEyg==}
@@ -9919,7 +9919,7 @@ snapshots:
 
   '@vunk/gsap@0.0.0-alpha.3': {}
 
-  '@vunk/plus@1.4.7': {}
+  '@vunk/plus@1.7.2': {}
 
   '@vunk/shared@0.8.14': {}
 

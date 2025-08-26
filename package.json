@@ -36,7 +36,7 @@
     "@vunk/echarts": "^0.0.3",
     "@vunk/form": "2.9.3",
     "@vunk/markdown": "workspace:*",
-    "@vunk/plus": "1.4.7",
+    "@vunk/plus": "1.7.2",
     "@vunk/shared": "0.8.14",
     "@vunk/skzz": "0.0.0-alpha.111",
     "ant-design-x-vue": "^1.2.4",
