@@ -10,16 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v2
+      # 安装 pnpm（不用 npm 安装，避免429）
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10 # 指定你项目用的 pnpm 版本
+
+      # 缓存依赖，加速构建
+      - uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
-        run: |
-          npm install -g pnpm
-          pnpm install
+        run: pnpm install
 
       - name: Build
-        run: npm run docs:build
+        run: pnpm run docs:build
         timeout-minutes: 30
         env:
           NODE_OPTIONS: --max-old-space-size=8192
