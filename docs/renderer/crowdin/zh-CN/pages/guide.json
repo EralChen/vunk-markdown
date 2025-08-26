@@ -76,6 +76,10 @@
         "text": "GIS"
       },
       {
+        "link": "/example-map",
+        "text": "地图中集成使用"
+      },
+      {
         "link": "/example-antx",
         "text": "AntX 集成使用"
       },

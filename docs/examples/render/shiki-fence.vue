@@ -27,5 +27,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div v-html="html"></div>
+  <el-card header="code" class="mt-m">
+    <div v-html="html"></div>
+  </el-card>
 </template>
