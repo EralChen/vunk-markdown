@@ -1,0 +1,1 @@
+var E,I,L;(function(o){o[o.VISIBLE_ONLY=0]="VISIBLE_ONLY",o[o.ALL=1]="ALL",o[o.QUERYABLE=2]="QUERYABLE"})(E||(E={})),(function(o){o[o.EXIT=0]="EXIT",o[o.CONTINUE=1]="CONTINUE",o[o.SKIP=2]="SKIP"})(I||(I={})),(function(o){o[o.Absolute=0]="Absolute",o[o.RelativeToGround=1]="RelativeToGround",o[o.OnTheGround=2]="OnTheGround"})(L||(L={}));export{L as E,E as n,I as o};
