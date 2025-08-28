@@ -15,6 +15,18 @@ TemplateEcharts 是一个用于在 Markdown 中渲染 ECharts 图表的模板组
 template-echarts/basic
 :::
 
+## Error 状态
+
+:::demo
+template-echarts/error
+:::
+
+## Loading 状态
+
+:::demo
+template-echarts/loading
+:::
+
 ## 配置格式
 
 TemplateEcharts 支持两种配置格式：

@@ -14,7 +14,7 @@ ${txt}
 :::
 `
 
-const currentIndex = ref(400)
+const currentIndex = ref(0)
 const currentText = computed(() => {
   return data.slice(0, currentIndex.value)
 })
@@ -32,6 +32,7 @@ const interval = setInterval(() => {
 <template>
   <VkMarkdown
     :source="currentText"
+
     :containers="['echarts']"
   >
     <VkTemplatesDefault />
