@@ -1,1 +1,0 @@
-import{cD as a,aO as l}from"./chunk-XGpVqsM_.js";function i(n,e){return u(n?.data.coordinateHelper.hasZ(),e)}function u(n,e){return!!n&&e.mode!=="on-the-ground"&&!a(e)}function s(n,e){let r=null;const t=n.events.on("grab-changed",(o=>{r!=null&&(r.remove(),r=null),o.action==="start"&&(r=n.disableDisplay())}));return l((()=>{r?.remove(),t.remove()}))}export{i as o,s as r};

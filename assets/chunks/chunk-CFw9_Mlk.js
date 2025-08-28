@@ -1,1 +1,0 @@
-import{db as c,bf as O}from"./chunk-XGpVqsM_.js";const I=c().vec3f(O.POSITION),f=c().vec3f(O.POSITION).vec2f16(O.UV0),v=c().vec3f(O.POSITION).vec4u8(O.COLOR);c().vec3f(O.POSITION).vec2f16(O.UV0).vec4u8(O.OLIDCOLOR);const N=c().vec3f(O.POSITION).vec2f(O.UV0),P=c().vec3f(O.POSITION).vec2f(O.UV0).vec4u8(O.OLIDCOLOR);export{I,f as c,v as f,P as r,N as t};

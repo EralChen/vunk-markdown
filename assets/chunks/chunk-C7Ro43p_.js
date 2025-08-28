@@ -1,0 +1,27 @@
+const n=`{
+  "title": {
+    "text": "基础柱状图示例",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "xAxis": {
+    "type": "category",
+    "data": ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "name": "销量",
+      "type": "bar",
+      "data": [10, 52, 200, 334, 390, 330, 220]
+    }
+  ]
+}
+`;export{n as t};
