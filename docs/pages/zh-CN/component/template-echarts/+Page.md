@@ -55,15 +55,14 @@ series:
     data: [1, 2, 3, 4, 5]
 ```
 
-## 注意事项
+## Slot Default
 
-+ 可以通过 `css` 设置图表容器的高度。
+TemplateEcharts 提供了一个默认插槽，允许您自定义图表的渲染内容和错误处理。
 
-```css
-.vk-template-echarts__wrapper{
-  height: 400px;
-}
-.vk-echart-x{
-  height: 100%;
-}
-```
+#### 作用域参数
+
+| 参数 | 类型 | 说明 |
+| --- | --- | --- |
+| close | BasicToken | close Token |
+| error | `Error \| undefined` | 图表渲染过程中的错误信息 |
+| finished | `boolean` | 图表是否渲染完成 |
