@@ -1,0 +1,1 @@
+import{da as c,be as O}from"./chunk-DadqOv6U.js";const I=c().vec3f(O.POSITION),v=c().vec3f(O.POSITION).vec2f16(O.UV0),f=c().vec3f(O.POSITION).vec4u8(O.COLOR);c().vec3f(O.POSITION).vec2f16(O.UV0).vec4u8(O.OLIDCOLOR);const N=c().vec3f(O.POSITION).vec2f(O.UV0),P=c().vec3f(O.POSITION).vec2f(O.UV0).vec4u8(O.OLIDCOLOR);export{I,v as c,f,P as r,N as t};
