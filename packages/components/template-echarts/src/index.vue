@@ -9,20 +9,26 @@ export default defineComponent({
   name: 'VkTemplateEcharts',
   props,
   emits,
-  setup () {
+  setup (_props, { slots }) {
     return () => (
       <VkRendererTemplate type="container:echarts">
         {{
           default: (ctx) => {
             const children = ctx.raw.children
+            const close = ctx.raw.close
             return (
               <div
                 class="vk-template-echarts__wrapper"
               >
+
                 <VkEchart>
                   <Core
                     source={children}
+                    close={close}
                   >
+                    {{
+                      default: slots.default,
+                    }}
                   </Core>
                 </VkEchart>
               </div>
@@ -38,5 +44,6 @@ export default defineComponent({
 <style>
 .vk-template-echarts__wrapper{
   height: 500px;
+  position: relative;
 }
 </style>

@@ -1,4 +1,5 @@
 <script lang="ts">
+// import { container } from '@mdit/plugin-container'
 import { VkRenderer } from '@vunk-markdown/components/strategy-renderer'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
 import MarkdownIt from 'markdown-it'

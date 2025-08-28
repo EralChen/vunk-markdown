@@ -6,7 +6,6 @@ import type { Ref } from 'vue'
 import { SimpleFillSymbol, SimpleLineSymbol, SimpleMarkerSymbol } from '@vuesri/core/arcgis'
 import { noop } from '@vunk/shared/function'
 import { geojsonToArcGIS } from '@vunk/shared/gis'
-import Geometry from 'esri/geometry/Geometry'
 import { jsonrepair } from 'jsonrepair'
 import { computed, nextTick, ref, watchEffect } from 'vue'
 
