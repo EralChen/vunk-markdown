@@ -48,6 +48,7 @@ export default defineComponent({
         : ''
     })
     const json = ref<NormalObject>({})
+
     watchEffect(async () => {
       noop(jsonStr.value)
       await nextTick()
@@ -112,14 +113,13 @@ export default defineComponent({
     })
 
     watchEffect(() => {
-      noop(props.close.markup) // markup 依赖搜集
-
       if (!options.value || !isObject(options.value)) {
         return
       }
       if (isEmptyObject(options.value)) {
         return
       }
+
       setTimeout(() => {
         setSeriesData(options.value)
       })
