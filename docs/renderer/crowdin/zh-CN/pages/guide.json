@@ -76,6 +76,10 @@
         "text": "GIS"
       },
       {
+        "link": "/example-double",
+        "text": "双通道示例"
+      },
+      {
         "link": "/example-map",
         "text": "地图中集成使用"
       },
