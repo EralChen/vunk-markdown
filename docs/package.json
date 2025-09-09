@@ -19,7 +19,6 @@
     "@shikijs/core": "^3.4.1",
     "@shikijs/transformers": "^3.4.1",
     "markdown-it-anchor": "^9.2.0",
-    "markdown-it-container": "^4.0.0",
     "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.5.0",
     "vite-plugin-inspect": "^11.0.1",

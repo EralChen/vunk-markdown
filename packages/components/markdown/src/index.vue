@@ -1,9 +1,9 @@
 <script lang="ts">
-// import { container } from '@mdit/plugin-container'
+import type { MarkdownItContainerOptions } from '@vunk-markdown/shared/container'
 import { VkRenderer } from '@vunk-markdown/components/strategy-renderer'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
+import { container } from '@vunk-markdown/shared/container'
 import MarkdownIt from 'markdown-it'
-import MarkdownItContainer from 'markdown-it-container'
 import { computed, defineComponent } from 'vue'
 import { emits, props } from './ctx'
 import { tokensToTree } from './utils'
@@ -22,7 +22,10 @@ export default defineComponent({
     props.markdownItSetup!(md)
 
     props.containers.forEach((tag) => {
-      md.use(MarkdownItContainer, tag)
+      // md.use(MarkdownItContainer, tag)
+      md.use(container, {
+        name: tag,
+      } as MarkdownItContainerOptions)
     })
 
     const items = computed(() => tokensToTree(

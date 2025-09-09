@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { VkMarkdown } from '@vunk-markdown/components/markdown'
-import { VkRendererTemplate } from '@vunk/core/components/renderer-template'
+import { VkRendererTemplate } from '@vunk/markdown'
 </script>
 
 <template>

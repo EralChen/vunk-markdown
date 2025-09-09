@@ -16,6 +16,7 @@ This is a warning message.
   <VkMarkdown
     :source="source"
     :containers="['echarts', 'warning']"
+    dev
   >
     <VkTemplatesDefault />
     <VkRendererTemplate type="container:warning">

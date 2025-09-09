@@ -53,6 +53,12 @@ export default defineComponent({
           }}
         </VkRendererTemplate>
 
+        <VkRendererTemplate type="hardbreak">
+          {{
+            default: () => <br />,
+          }}
+        </VkRendererTemplate>
+
         <VkRendererTemplate type="hr">
           {{
             default: () => <hr />,
