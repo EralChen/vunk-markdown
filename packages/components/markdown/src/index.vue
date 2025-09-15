@@ -27,11 +27,13 @@ export default defineComponent({
         name: tag,
       } as MarkdownItContainerOptions)
     })
+    const tags = props.tags
+    const fences = props.fences
 
     const items = computed(() => tokensToTree(
       md.parse(props.source, {}),
-      props.tags,
-      props.fences,
+      tags,
+      fences,
     ))
 
     const handlelog = () => {
