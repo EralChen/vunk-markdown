@@ -3,6 +3,7 @@ import type { __VkMarkdown } from '@vunk-markdown/components/markdown'
 import type MarkdownIt from 'markdown-it'
 import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { defineComponent } from 'vue'
+import Media from './media.vue'
 import { parseTag } from './utils'
 
 export default defineComponent({
@@ -98,6 +99,13 @@ export default defineComponent({
             ),
           }}
         </VkRendererTemplate>
+
+        <VkRendererTemplate type="image">
+          {{
+            default: ({ raw }) => <Media token={raw}></Media>,
+          }}
+        </VkRendererTemplate>
+
       </>
 
     )
