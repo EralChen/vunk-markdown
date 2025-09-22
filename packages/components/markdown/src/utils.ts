@@ -108,3 +108,8 @@ export function treeToTokens (
 
   return result
 }
+
+export function tokensToString (tree: RendererToken[]) {
+  const tokens = treeToTokens(tree)
+  return tokens.map(t => t.content).join('').trim()
+}

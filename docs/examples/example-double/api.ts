@@ -22,3 +22,22 @@ export async function agentRequest (
     data,
   })
 }
+
+export async function echartsAgentRequest (
+  onmessage: RestFetchReaderOnmessage,
+  data: {
+    message: string
+  },
+  abortController?: AbortController,
+) {
+  return restFetch.reader({
+    url: '/application/chat_message/238431a8-870a-11f0-85b0-6e0b28fdd362',
+    onmessage,
+    abortController,
+  }, {
+    headers: {
+      authorization: 'application-30ebbe93cec2d175445f05785e9dde41',
+    },
+    data,
+  })
+}

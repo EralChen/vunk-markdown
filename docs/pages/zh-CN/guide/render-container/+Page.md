@@ -14,7 +14,7 @@ render-container/basic
 
 ## 使用方法
 
-组件内置了 `markdown-it-container` 插件来处理 Markdown 容器语法。
+组件内置了 `container` 插件来处理 Markdown 容器语法。
 
 在 `VkMarkdown` 组件中通过 `containers` 属性指定要自定义渲染的容器类型：
 

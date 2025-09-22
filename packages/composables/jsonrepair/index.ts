@@ -1,6 +1,7 @@
 import type { NormalObject } from '@vunk/shared'
+import type { MaybeRef } from 'vue'
 import { jsonrepair } from 'jsonrepair'
-import { computed, type MaybeRef, nextTick, ref, unref, watchEffect } from 'vue'
+import { computed, nextTick, ref, unref, watchEffect } from 'vue'
 
 function trimToLastBrace (str: string) {
   // 找到最后一个 } ] , 的位置

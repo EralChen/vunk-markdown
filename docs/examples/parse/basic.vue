@@ -10,6 +10,8 @@ const source = ref(
 
 [百度](https://www.baidu.com)
 
+![图片示例](https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg)
+
 - 无序列表项 1
 - 无序列表项 2
   - 嵌套列表项 2.1

@@ -1,6 +1,6 @@
 {
   "name": "@vunk/markdown",
-  "version": "0.0.14",
+  "version": "0.0.17",
   "description": "",
   "author": "EralChen",
   "license": "MIT",
@@ -24,8 +24,7 @@
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
-    "markdown-it": "^14.1.0",
-    "markdown-it-container": "^4.0.0"
+    "markdown-it": "^14.1.0"
   },
   "devDependencies": {
     "rollup": "^4.43.0",
