@@ -1,4 +1,0 @@
-import{as as d}from"./chunk-CLZJNR18.js";import{f as x}from"./chunk-Dp3PeqDf.js";var s=/[\\^$.*+?()[\]{}|]/g,h=RegExp(s.source);function g(e){return e=d(e),e&&h.test(e)?e.replace(s,"\\$&"):e}/*! All material copyright ESRI, All Rights Reserved, unless otherwise specified.
-See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.
-v3.2.1 */const b=(e,u,c)=>{const i=g(u),p=new RegExp(i,"i");e.length===0&&console.warn(`No data was passed to the filter function.
-    The data argument should be an array of objects`);const f=(t,n,a)=>{if(t?.constant||t?.filterDisabled)return!0;let o=!1;return x(t,(r,l)=>{typeof r=="function"||r==null||a&&!a.includes(l)||(Array.isArray(r)||typeof r=="object"&&r!==null?f(r,n)&&(o=!0):n.test(r)&&(o=!0))}),o};return e.filter(t=>f(t,p,c))};export{g as e,b as f};
