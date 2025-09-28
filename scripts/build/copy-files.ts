@@ -24,6 +24,15 @@ export default parallel(
     )
   }),
 
+  gulpTask('copy v image', async () => {
+    const inputAssets = path.resolve(workRoot, './v.jpg')
+
+    fs.copyFileSync(
+      inputAssets,
+      path.resolve(outputAssets, 'v.jpg'),
+    )
+  }),
+
   gulpTask('copy LICENSE', async () => {
     const inputAssets = path.resolve(workRoot, './LICENSE')
     fs.copyFileSync(
