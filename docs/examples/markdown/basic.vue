@@ -18,9 +18,25 @@ You can write _italic_, **bold**, and even [links](https://example.com).
   + Sub-item 1
   + Sub-item 2
 
+<div>
+    <p>HTML content inside Markdown:</p>
+    <span style="color:red;">test</span>
+<div>
+
+Before span <span style="color:red;" >test1</span> After span
+
+<video 
+  src="https://www.w3schools.com/html/mov_bbb.mp4" 
+  controls 
+/> 
+
+after html block
+
+> This is a blockquote.
+
 `
 
-const currentIndex = ref(0)
+const currentIndex = ref(1)
 const currentText = computed(() => {
   return text.slice(0, currentIndex.value + 1)
 })
@@ -37,6 +53,10 @@ const interval = setInterval(() => {
 
 <template>
   <VkMarkdown
+    dev
     :source="currentText"
+    :markdown-it-options="{
+      html: true,
+    }"
   ></VkMarkdown>
 </template>

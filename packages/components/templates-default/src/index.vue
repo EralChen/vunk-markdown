@@ -106,6 +106,42 @@ export default defineComponent({
           }}
         </VkRendererTemplate>
 
+        <VkRendererTemplate type="html_block">
+          {{
+            default: ({ raw }) => (
+              <div
+                class="vk-markdown-html-block"
+                v-html={raw.content}
+              >
+              </div>
+            ),
+          }}
+        </VkRendererTemplate>
+
+        <VkRendererTemplate type="html_inline">
+          {{
+            default: ({ raw }) => (
+              <span
+                class="vk-markdown-html-inline"
+                v-html={raw.content}
+              >
+              </span>
+            ),
+          }}
+        </VkRendererTemplate>
+
+        <VkRendererTemplate type="group:html_inline">
+          {{
+            default: ({ raw, md }) => (
+              <span
+                class="vk-markdown-html-inline"
+                v-html={md.renderer.render([raw.open, ...raw.children, raw.close], {})}
+              >
+              </span>
+            ),
+          }}
+        </VkRendererTemplate>
+
       </>
 
     )
