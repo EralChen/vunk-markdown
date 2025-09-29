@@ -1,5 +1,7 @@
 import type { Token } from 'markdown-it'
 import type { GroupToken, RendererToken } from './types'
+import { classifyTag } from './utils-html'
+
 /**
  * 将 Markdown-It 的扁平 Token 数组转为嵌套树状结构
  */
@@ -37,8 +39,15 @@ export function tokensToTree (
   }
 
   for (const token of tokens) {
-    // 递归处理 token.children（如果有）
+    if (token.type === 'html_inline') {
+      const tagType = classifyTag(token.content)
 
+      if (typeof tagType === 'number') {
+        token.nesting = tagType
+      }
+    }
+
+    // 递归处理 token.children（如果有）
     if (token.nesting === 1) {
       // 开始一个新 block
       const group: GroupToken = {
@@ -46,15 +55,20 @@ export function tokensToTree (
         tag: token.tag,
         open: token,
         close: null!, // 占位，稍后补全
+        type: token.type,
         children: [],
       }
 
       if (token.type.startsWith('container_')) {
         group.templateType = `container:${token.info.split(' ')[0]}`
       }
+      else if (token.type === 'html_inline') {
+        group.templateType = `group:html_inline`
+      }
       else if (tags.includes(token.tag)) {
         group.templateType = `tag:${token.tag}`
       }
+
       stack.push(group)
     }
     else if (token.nesting === -1) {
@@ -73,7 +87,7 @@ export function tokensToTree (
   }
 
   if (stack.length > 0) {
-    console.warn('Unclosed token groups detected:', stack)
+    console.warn('Unclosed token')
   }
 
   return result
