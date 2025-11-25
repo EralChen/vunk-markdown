@@ -59,6 +59,10 @@
       {
         "link": "/markdown-it-setup",
         "text": "Markdown It Setup 扩展"
+      },
+      {
+        "link": "/render-async",
+        "text": "RenderAsync 异步渲染"
       }
     ]
 
