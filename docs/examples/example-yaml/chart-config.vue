@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { NormalObject } from '@vunk/shared'
 import type { EChartsOption } from 'echarts'
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 import { useEchart } from '@vunk/echarts'
 import { noop } from '@vunk/shared/function'
 import { throttle } from 'lodash-es'

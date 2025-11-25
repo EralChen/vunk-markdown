@@ -16,6 +16,7 @@
     "vue",
     "markdown",
     "markdown-it",
+    "markdown-exit",
     "component library"
   ],
   "main": "index.ts",
@@ -23,8 +24,7 @@
     "build": "gulp -f gulpfile.ts"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
-    "markdown-it": "^14.1.0"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "rollup": "^4.43.0",

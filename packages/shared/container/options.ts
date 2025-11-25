@@ -1,4 +1,6 @@
-import type { RenderRule } from 'markdown-it/lib/renderer.mjs'
+import type { RenderRule } from 'markdown-exit'
+
+export type Renderer = Parameters<RenderRule>[4]
 
 export interface MarkdownItContainerOptions {
   /**

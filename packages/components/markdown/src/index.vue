@@ -3,7 +3,7 @@ import type { MarkdownItContainerOptions } from '@vunk-markdown/shared/container
 import { VkRenderer } from '@vunk-markdown/components/strategy-renderer'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
 import { container } from '@vunk-markdown/shared/container'
-import MarkdownIt from 'markdown-it'
+import { createMarkdownExit } from 'markdown-exit'
 import { computed, defineComponent } from 'vue'
 import { emits, props } from './ctx'
 import { tokensToTree } from './utils'
@@ -17,13 +17,13 @@ export default defineComponent({
   props,
   emits,
   setup (props, { expose }) {
-    const md = MarkdownIt(props.markdownItOptions)
+    const md = createMarkdownExit(props.markdownItOptions)
 
     props.markdownItSetup!(md)
 
     props.containers.forEach((tag) => {
       // md.use(MarkdownItContainer, tag)
-      md.use(container, {
+      md.use(container as never, {
         name: tag,
       } as MarkdownItContainerOptions)
     })

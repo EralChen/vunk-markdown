@@ -1,5 +1,5 @@
 import type { __VkRenderer } from '@vunk/core/components/renderer'
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 
 export interface BasicToken extends Token,
   __VkRenderer.SourceItem {

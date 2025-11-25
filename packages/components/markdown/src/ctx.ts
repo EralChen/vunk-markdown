@@ -1,5 +1,5 @@
 import type { AnyFunc } from '@vunk/shared'
-import type MarkdownIt from 'markdown-it'
+import type { MarkdownExitOptions } from 'markdown-exit'
 import type { PropType } from 'vue'
 import { noop } from '@vunk/shared/function'
 
@@ -41,7 +41,7 @@ export const props = {
    * @description MarkdownIt 配置项
    */
   markdownItOptions: {
-    type: Object as PropType<MarkdownIt.Options>,
+    type: Object as PropType<MarkdownExitOptions>,
     default: () => ({}),
   },
 

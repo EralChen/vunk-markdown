@@ -4,12 +4,8 @@
  * ref: https://github1s.com/mdit-plugins/mdit-plugins/blob/main/packages/container/src/plugin.ts
  */
 
-import type { Options, PluginWithOptions } from 'markdown-it'
-import type { RuleBlock } from 'markdown-it/lib/parser_block.mjs'
-import type Renderer from 'markdown-it/lib/renderer.mjs'
-import type Token from 'markdown-it/lib/token.mjs'
-
-import type { MarkdownItContainerOptions } from './options'
+import type { PluginWithOptions, RenderOptions, RuleBlock, Token } from 'markdown-exit'
+import type { MarkdownItContainerOptions, Renderer } from './options'
 
 const MIN_MARKER_NUM = 3
 
@@ -29,7 +25,7 @@ export const container: PluginWithOptions<MarkdownItContainerOptions> = (
     openRender = (
       tokens: Token[],
       index: number,
-      options: Options,
+      options: RenderOptions,
       _env: unknown,
       slf: Renderer,
     ): string => {
@@ -41,7 +37,7 @@ export const container: PluginWithOptions<MarkdownItContainerOptions> = (
     closeRender = (
       tokens: Token[],
       index: number,
-      options: Options,
+      options: RenderOptions,
       _env: unknown,
       slf: Renderer,
     ): string => slf.renderToken(tokens, index, options),
@@ -143,7 +139,6 @@ export const container: PluginWithOptions<MarkdownItContainerOptions> = (
     const oldLineMax = state.lineMax
     const oldBlkIndent = state.blkIndent
 
-    // @ts-expect-error: We are creating a new type called "container"
     state.parentType = 'container'
 
     // this will prevent lazy continuations from ever going past our end marker
@@ -176,6 +171,8 @@ export const container: PluginWithOptions<MarkdownItContainerOptions> = (
   md.block.ruler.before('fence', `container_${name}`, container, {
     alt: ['paragraph', 'reference', 'blockquote', 'list'],
   })
-  md.renderer.rules[`container_${name}_open`] = openRender
+  md.renderer.rules[`container_${name}_open`] = (tokens, index, options, env, slf) => {
+    return openRender(tokens, index, options, env, slf)
+  }
   md.renderer.rules[`container_${name}_close`] = closeRender
 }

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import MarkdownIt from 'markdown-it'
+import MarkdownIt from 'markdown-exit'
 import { computed } from 'vue'
 
 const props = defineProps({

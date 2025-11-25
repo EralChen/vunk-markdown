@@ -1,6 +1,6 @@
 # @vunk/markdown
 
-@vunk/markdown 是一个基于 markdown-it 的增强型 Markdown 渲染库，专为现代 Vue3 应用设计。它的核心使命是 **增强 Markdown 内容在页面中的表现力**，通过 **自定义渲染策略** 将传统的 Markdown 文本转换为丰富的交互式组件。
+@vunk/markdown 是一个基于 markdown-exit 的增强型 Markdown 渲染库，专为现代 Vue3 应用设计。它的核心使命是 **增强 Markdown 内容在页面中的表现力**，通过 **自定义渲染策略** 将传统的 Markdown 文本转换为丰富的交互式组件。
 
 
 [在线文档](https://eralchen.github.io/vunk-markdown/zh-CN/guide/introduction)

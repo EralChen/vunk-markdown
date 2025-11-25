@@ -1,8 +1,8 @@
 # Markdown It Setup 扩展
 
-您可以自定义配置 MarkdownIt 实例，集成各种 markdown-it 插件来扩展 Markdown 解析功能。
+您可以自定义配置 MarkdownIt 实例，集成各种 markdown-exit 插件来扩展 Markdown 解析功能。
 
-通过 `markdownItSetup`，您可以充分利用 markdown-it 生态系统的强大功能。
+通过 `markdownItSetup`，您可以充分利用 markdown-exit 生态系统的强大功能。
 
 ## 数学公式渲染
 

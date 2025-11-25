@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { NormalObject } from '@vunk/core'
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 import type { PropType } from 'vue'
 import { useEchart } from '@vunk/echarts'
 import { noop } from '@vunk/shared/function'

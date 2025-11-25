@@ -1,4 +1,4 @@
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 import type { GroupToken, RendererToken } from './types'
 import { classifyTag } from './utils-html'
 
