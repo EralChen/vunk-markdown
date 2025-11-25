@@ -1,6 +1,6 @@
 <script lang="tsx">
 import type { __VkMarkdown } from '@vunk-markdown/components/markdown'
-import type MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-exit'
 import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { defineComponent } from 'vue'
 import Media from './media.vue'

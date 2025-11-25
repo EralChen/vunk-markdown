@@ -1,5 +1,5 @@
 import type { __VkMarkdown } from '@vunk-markdown/components/markdown'
-import type MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-exit'
 import { parseDocument } from 'htmlparser2'
 
 export function parseTag (md: MarkdownIt, raw: __VkMarkdown.GroupToken) {

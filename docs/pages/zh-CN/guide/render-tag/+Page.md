@@ -20,7 +20,7 @@ render-tag/a
 
 ## 使用方法
 
-`markdown-it` 解析的标签对, 将包含在 `GroupToken` 中, 由 [Templatetype GroupToken](../render/+Page.md#templatetype-grouptoken) 对应的渲染器渲染。
+`markdown-exit` 解析的标签对, 将包含在 `GroupToken` 中, 由 [Templatetype GroupToken](../render/+Page.md#templatetype-grouptoken) 对应的渲染器渲染。
 
 在 `VkMarkdown` 组件中通过 `tags` 属性指定要自定义渲染的标签：
 

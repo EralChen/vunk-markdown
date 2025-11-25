@@ -12,7 +12,7 @@ render-fence/basic
 
 ## 使用方法
 
-`markdown-it` 解析的 `fence`, 将包含在 `type="fence"`的 Token 中, 默认由 [Templatetype fence](../../component/templates-default/+Page.md#templatesdefault-核心代码) 对应的渲染器渲染。
+`markdown-exit` 解析的 `fence`, 将包含在 `type="fence"`的 Token 中, 默认由 [Templatetype fence](../../component/templates-default/+Page.md#templatesdefault-核心代码) 对应的渲染器渲染。
 
 在 `VkMarkdown` 组件中通过 `fences` 属性指定要自定义渲染的围栏类型：
 
@@ -30,7 +30,7 @@ render-fence/basic
 
 ## TemplatesFence
 
-你可以使用组件库为你提供的 `容器渲染策略`, 按需引入 [TemplatesFence](../../component/templates-fence/+Page.md) 来使用
+你可以使用组件库为你提供的 `围栏渲染策略`, 按需引入 [TemplatesFence](../../component/templates-fence/+Page.md) 来使用
 
 ```ts
 import { VkTemplatesFence } from '@vunk/markdown/components/templates-fence'

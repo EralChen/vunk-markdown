@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-exit'
 import { VkTemplatesDefault } from '@vunk-markdown/components/templates-default'
 import { VkMarkdown } from '@vunk/markdown'
 

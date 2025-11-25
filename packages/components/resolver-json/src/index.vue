@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 import { useJsonrepair } from '@vunk-markdown/composables/jsonrepair'
 import { noop } from '@vunk/shared/function'
 import { computed, defineComponent, nextTick, ref, watchEffect } from 'vue'

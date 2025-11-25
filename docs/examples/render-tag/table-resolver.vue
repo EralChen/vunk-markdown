@@ -2,7 +2,7 @@
 import type { __VkMarkdown } from '@vunk/markdown'
 import type { __VkTableColumns } from '@vunk/plus/components/table-columns'
 import type { NormalObject } from '@vunk/shared'
-import type { Token } from 'markdown-it'
+import type { Token } from 'markdown-exit'
 import { eachDeep } from 'deepdash-es/standalone'
 import { computed } from 'vue'
 
