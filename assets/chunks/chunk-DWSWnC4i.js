@@ -1,1 +1,0 @@
-import{az as s,aA as f,aB as u}from"./chunk-D2wkNa4R.js";function c(r,t,a,e){for(var n=-1,g=r==null?0:r.length;++n<g;){var o=r[n];t(e,o,a(o),r)}return e}function A(r,t,a,e){return s(r,function(n,g,o){t(e,n,a(n),o)}),e}function i(r,t){return function(a,e){var n=u(a)?c:A,g=t?t():{};return n(a,r,f(e),g)}}export{i as c};

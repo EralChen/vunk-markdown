@@ -1,0 +1,1 @@
+import{ai as t,aj as e,al as s}from"./chunk-cvHeDBxF.js";import{h as o}from"./chunk-BAVeB7Om.js";import"./chunk-CqlT16uv.js";let r=class extends o{constructor(){super(...arguments),this.type="group"}};t([e()],r.prototype,"view",void 0),r=t([s("esri.views.3d.layers.GroupLayerView3D")],r);const m=r;export{m as default};

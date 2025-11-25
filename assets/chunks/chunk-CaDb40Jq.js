@@ -1,1 +1,0 @@
-import{cD as e,ai as s,aj as i,al as a}from"./chunk-CZWLvyZS.js";import{r}from"./chunk-C8sf3mZx.js";let t=class extends r{constructor(o){super(o),this.type="translate",this.distance=e}clear(){this.distance=e}};s([i()],t.prototype,"type",void 0),s([i()],t.prototype,"distance",void 0),t=s([a("esri.views.interactive.tooltip.infos.TranslateTooltipInfo")],t);export{t as i};

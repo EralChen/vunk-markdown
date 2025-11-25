@@ -1,0 +1,1 @@
+import{aN as e,V as i,aU as n}from"./chunk-cvHeDBxF.js";function u(r){return i.isCollection(r)?r.toArray():Array.isArray(r)?r:t(r)||n(r)||a(r)?[r]:s}function t(r){return typeof r=="number"||typeof r=="string"}const s=[],o=e();function a(r){return r.declaredClass==="esri.views.3d.layers.i3s.PointCloudGraphic"}export{u as e,t as i,o as s};
