@@ -7,6 +7,10 @@ export const props = {
     type: null as unknown as PropType<MaybeArray<__VkMarkdown.RendererToken>>,
     default: () => [],
   },
+  repair: {
+    type: Boolean,
+    default: true,
+  },
 }
 
 export const emits = {

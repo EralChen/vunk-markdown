@@ -40,7 +40,9 @@ export default defineComponent({
     const content = computed(() => {
       return theToken.value?.content || ''
     })
-    const { json } = useJsonrepair(content)
+    const { json, error, repaired } = useJsonrepair(content, {
+      repair: props.repair,
+    })
     const { json: attrs } = useJsonrepair(description)
 
     return () => theToken.value
@@ -50,6 +52,8 @@ export default defineComponent({
         content: content.value,
         json: json.value,
         attrs: attrs.value,
+        repaired: repaired.value,
+        error: error.value,
       })
       : null
   },

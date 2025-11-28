@@ -41,5 +41,14 @@
         "text": "TemplatesFence"
       }
     ]
+  },
+  "utils": {
+    "text": "工具",
+    "children": [
+      {
+        "link": "/resolver-json",
+        "text": "ResolverJson"
+      }
+    ]
   }
 }
