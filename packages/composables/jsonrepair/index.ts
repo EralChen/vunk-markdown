@@ -17,13 +17,18 @@ function trimToLastBrace (str: string) {
 
 export function useJsonrepair (
   jsonStr: MaybeRef<string>,
+  options: {
+    repair?: boolean
+  } = {},
 ) {
+  const repair = options.repair ?? true
   const json = ref<NormalObject | null>(null)
 
   const trimmedJsonStr = computed(() => {
     return trimToLastBrace(unref(jsonStr))
   })
   const error = ref<any>()
+  const repaired = ref(false)
 
   watchEffect(async () => {
     if (!trimmedJsonStr.value)
@@ -31,15 +36,22 @@ export function useJsonrepair (
 
     await nextTick()
 
+    repaired.value = false
     error.value = null
 
     try {
       json.value = JSON.parse(trimmedJsonStr.value)
     }
-    catch {
+    catch (err) {
+      if (!repair) {
+        error.value = err
+        return
+      }
+
       try {
         const repairedJson = jsonrepair(trimmedJsonStr.value)
         json.value = JSON.parse(repairedJson)
+        repaired.value = true
       }
       catch (err) {
         error.value = err
@@ -50,5 +62,6 @@ export function useJsonrepair (
   return {
     json,
     error,
+    repaired,
   }
 }
