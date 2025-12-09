@@ -1,0 +1,1 @@
+import{ad as n}from"./chunk-CAj60Dev.js";import{d as o,c as t,o as m,u as r}from"./chunk-yDgrv90l.js";const e=o({name:"VkTemplatesFence",__name:"index",setup(a){return(s,c)=>(m(),t(r(n)))}});e.install=a=>{a.component(e.name||"VkTemplatesFence",e)};export{e as _};
