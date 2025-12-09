@@ -1,10 +1,10 @@
 {
   "name": "@vunk-markdown/components",
-  "scripts": {
-    "build": "gulp -f gulpfile.ts"
-  },
-  "keywords": [],
+  "description": "",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "keywords": [],
+  "scripts": {
+    "build": "gulp -f gulpfile.ts"
+  }
 }

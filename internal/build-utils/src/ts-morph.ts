@@ -17,6 +17,7 @@ export async function genTypes (opts = {} as {
     root: workRoot,
     compilerOptions: {
       outDir,
+      jsxImportSource: "vue",
     },
     globSource,
     globCwd,
