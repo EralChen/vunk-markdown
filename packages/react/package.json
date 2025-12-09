@@ -1,0 +1,18 @@
+{
+  "name": "@vunk-markdown/react",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@antv/gpt-vis": "^0.5.10",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

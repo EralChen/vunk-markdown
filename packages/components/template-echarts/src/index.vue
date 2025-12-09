@@ -3,7 +3,7 @@ import { VkRendererTemplate } from '@vunk-markdown/components/strategy-renderer'
 import { VkEchart } from '@vunk/echarts'
 import { defineComponent } from 'vue'
 import Core from './core.vue'
-import { emits, props } from './ctx'
+import { emits, props } from './ctx.js'
 
 export default defineComponent({
   name: 'VkTemplateEcharts',

@@ -23,12 +23,12 @@
     "esModuleInterop": true
   },
   "include": [
-    "typings/*.d.ts",
-    "internal/**/*.ts",
-    "packages/**/*.vue",
-    "packages/**/*.ts"
+    "**/*.ts",
+    "**/*.vue"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "vite.config.ts",
+    "node_modules"
   ]
 }
