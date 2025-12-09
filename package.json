@@ -36,7 +36,7 @@
     "@vunk/core": "1.6.5",
     "@vunk/echarts": "^0.0.3",
     "@vunk/form": "2.9.3",
-    "@vunk/markdown": "workspace:*",
+    "@vunk/markdown": "./dist",
     "@vunk/plus": "1.7.5",
     "@vunk/shared": "0.8.14",
     "@vunk/skzz": "0.0.0-alpha.111",

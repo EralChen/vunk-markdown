@@ -54,8 +54,8 @@ importers:
         specifier: 2.9.3
         version: 2.9.3
       '@vunk/markdown':
-        specifier: workspace:*
-        version: link:packages/entry
+        specifier: ./dist
+        version: link:dist
       '@vunk/plus':
         specifier: 1.7.5
         version: 1.7.5

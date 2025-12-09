@@ -93,11 +93,11 @@ export default series(
     writeJsonSync(distPkgFile, jsonObj, 2)
   }),
 
-  gulpTask('publish', async () => {
-    // --tag alpha
-    run(
-      'npm publish  --registry https://registry.npmjs.org --access public',
-      distDir,
-    )
-  }),
+  // gulpTask('publish', async () => {
+  //   // --tag alpha
+  //   run(
+  //     'npm publish  --registry https://registry.npmjs.org --access public',
+  //     distDir,
+  //   )
+  // }),
 )
