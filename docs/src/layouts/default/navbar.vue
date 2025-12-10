@@ -3,9 +3,11 @@ import type { CrowdinFile, NavRaw } from '#/shared'
 import type { RouteRecordRaw } from 'vue-router'
 import { CrowdinFilePath, useCrowdinFile } from '#/src/composables/crowdin'
 import VpThemeToggler from '#/vitepress/components/navbar/vp-theme-toggler.vue'
+import VkAvatar from '@vunk/plus/components/avatar'
 import { VkRoutesMenuContent } from '@vunk/plus/components/routes-menu-content'
 import { resolveFullPath } from '@vunk/shared/string/url'
 import { computed, onMounted, shallowRef } from 'vue'
+import logo from '../../../../logo.svg'
 
 const navCrow: CrowdinFile<NavRaw[]> = useCrowdinFile(CrowdinFilePath.nav) ?? {
   source: [],
@@ -53,8 +55,14 @@ const currentCrowname = computed(() => {
     sk-flex="row-between-center"
     class="h-full layout-default-navbar"
   >
-    <div class="font-600 plr-l ptb-s text-primary">
-      @vunk/markdown
+    <div class="font-600 plr-l ptb-s text-primary " sk-flex="row_center">
+      <VkAvatar
+        :src="logo"
+        :size="34"
+      ></VkAvatar>
+      <span>
+        vunk markdown
+      </span>
     </div>
 
     <div sk-flex="row_center" sub:gml-s>
