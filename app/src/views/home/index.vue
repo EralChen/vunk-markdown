@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { VkTemplateVis } from '@vunk-markdown/components/template-vis'
 import { VkMarkdown, VkTemplatesDefault } from '@vunk/markdown'
+import { VkTemplateVis } from '@vunk/markdown/components/template-vis'
 import { ref } from 'vue'
 
 const data = ref(`
