@@ -1,0 +1,1 @@
+import{_ as t}from"./chunk-Ac64rqby.js";import{d as n,h as l,o as r,F as o,E as s,c as u}from"./chunk-D3r4aXmB.js";const d=n({__name:"LayerRender",props:{data:{type:Array,required:!0}},setup(a){return(c,m)=>(r(!0),l(o,null,s(a.data,e=>(r(),u(t,{key:e.url,url:e.url,label:e.label},null,8,["url","label"]))),128))}});export{d as _};

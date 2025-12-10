@@ -1,1 +1,0 @@
-import{_ as t}from"./chunk-DsYbGKja.js";import{f3 as e,ak as r,_ as p,am as a}from"./chunk-DbiObNSB.js";let o=class extends e{constructor(s){super(s),this.sourcePoint=null,this.mapPoint=null}};t([r()],o.prototype,"sourcePoint",void 0),t([r({type:p})],o.prototype,"mapPoint",void 0),o=t([a("esri.layers.support.ControlPoint")],o);export{o as p};

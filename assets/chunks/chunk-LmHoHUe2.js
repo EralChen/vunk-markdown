@@ -1,0 +1,1 @@
+import{ha as m,hb as s}from"./chunk-B0S82j6z.js";import{m as i}from"./chunk-DXDxGwd7.js";import"./chunk-DsYbGKja.js";import"./chunk-BuZVacDv.js";/* empty css              */async function d(o,t,r){const a=m(o);return(await i(a,s.from(t),{...r})).data.objectIds}export{d as executeForTopIds};

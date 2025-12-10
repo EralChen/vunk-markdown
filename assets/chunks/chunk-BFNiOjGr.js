@@ -1,0 +1,9 @@
+import{_ as c}from"./chunk-DEZcuMl8.js";import{_ as l,V as u}from"./chunk-XokVNh2R.js";import{t as _}from"./chunk-C7Ro43p_.js";/* empty css              */import{d,r as f,g as v,c as h,o as e,w as i,a as m,u as r,h as k,e as x,i as g,t as V}from"./chunk-D3r4aXmB.js";/* empty css              */import"./chunk-8pJRsQxn.js";import"./chunk-DJT3kRBj.js";/* empty css              */import"./chunk-BuZVacDv.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const B={key:0,class:"vk-template-echarts__loading"},kt=d({__name:"loading",setup(C){const o=`
+# ECharts Example
+
+:::echarts
+\`\`\`json
+${_}
+\`\`\`
+:::
+`,t=f(0),p=v(()=>o.slice(0,t.value)),a=setInterval(()=>{t.value<o.length?t.value+=4:clearInterval(a)},60);return(w,E)=>(e(),h(r(u),{source:p.value,dev:"",containers:["echarts"]},{default:i(()=>[m(r(l)),m(r(c),null,{default:i(({finished:s,close:n})=>[n.markup?x("",!0):(e(),k("div",B,[g("span",null," Loading... test: "+V(s),1)]))]),_:1})]),_:1},8,["source"]))}});export{kt as default};

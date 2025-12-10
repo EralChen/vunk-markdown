@@ -1,0 +1,1 @@
+import{V as o,a as r}from"./chunk-XokVNh2R.js";import{d as t,c as n,o as s,w as c,a as p,u as e}from"./chunk-D3r4aXmB.js";const f=t({__name:"index",setup(_){return(u,d)=>(s(),n(e(r),{type:"VkMarkdown"},{default:c(({props:a})=>[p(e(o),{source:a.content},null,8,["source"])]),_:1}))}});export{f as _};
