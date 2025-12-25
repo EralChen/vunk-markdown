@@ -20,6 +20,9 @@ importers:
       '@skzz/platform':
         specifier: 0.0.0-alpha.76
         version: 0.0.0-alpha.76
+      '@toon-format/toon':
+        specifier: ^2.1.0
+        version: 2.1.0
       '@vuesri/core':
         specifier: ^2.0.0
         version: 2.1.0(@arcgis/core@4.34.8)(@vunk/core@1.6.5)(vue@3.5.25(typescript@5.9.3))
@@ -73,7 +76,7 @@ importers:
         version: 6.0.0
       element-plus:
         specifier: npm:element-plus@latest
-        version: 2.12.0(vue@3.5.25(typescript@5.9.3))
+        version: 2.13.0(vue@3.5.25(typescript@5.9.3))
       htmlparser2:
         specifier: ^10.0.0
         version: 10.0.0
@@ -2637,6 +2640,9 @@ packages:
   '@sxzz/popperjs-es@2.11.7':
     resolution: {integrity: sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==}
 
+  '@toon-format/toon@2.1.0':
+    resolution: {integrity: sha512-JwWptdF5eOA0HaQxbKAzkpQtR4wSWTEfDlEy/y3/4okmOAX1qwnpLZMmtEWr+ncAhTTY1raCKH0kteHhSXnQqg==}
+
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
@@ -3226,9 +3232,6 @@ packages:
   '@types/vinyl@2.0.12':
     resolution: {integrity: sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==}
 
-  '@types/web-bluetooth@0.0.16':
-    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
-
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
@@ -3612,9 +3615,6 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@vueuse/core@9.13.0':
-    resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
-
   '@vueuse/integrations@12.8.2':
     resolution: {integrity: sha512-fbGYivgK5uBTRt7p5F3zy6VrETlV9RtZjBqd1/HxGdjdckBgBM4ugP8LHpjolqTj14TXTxSK1ZfgPbHYyGuH7g==}
     peerDependencies:
@@ -3665,9 +3665,6 @@ packages:
   '@vueuse/metadata@13.9.0':
     resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
 
-  '@vueuse/metadata@9.13.0':
-    resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
-
   '@vueuse/shared@10.11.1':
     resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
 
@@ -3678,9 +3675,6 @@ packages:
     resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
     peerDependencies:
       vue: ^3.5.0
-
-  '@vueuse/shared@9.13.0':
-    resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
   '@vunk/core@1.6.5':
     resolution: {integrity: sha512-plDN+pMJ2WOgKIhlHGVZqQeHa4QugKSX2wlZNsHPFPF6/7HKY5ug7VfgbGDeZCm2X9fSX/gqNjkUHUQOtZ9zpw==}
@@ -4947,10 +4941,10 @@ packages:
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
-  element-plus@2.12.0:
-    resolution: {integrity: sha512-M9YLSn2np9OnqrSKWsiXvGe3qnF8pd94+TScsHj1aTMCD+nSEvucXermf807qNt6hOP040le0e5Aft7E9ZfHmA==}
+  element-plus@2.13.0:
+    resolution: {integrity: sha512-qjxS+SBChvqCl6lU6ShiliLMN6WqFHiXQENYbAY3GKNflG+FS3jqn8JmQq0CBZq4koFqsi95NT1M6SL4whZfrA==}
     peerDependencies:
-      vue: ^3.2.0
+      vue: ^3.3.0
 
   element-resize-detector@1.2.4:
     resolution: {integrity: sha512-Fl5Ftk6WwXE0wqCgNoseKWndjzZlDCwuPTcoVZfCP9R3EHQF8qUtr3YUPNETegRBOKqQKPW3n4kiIWngGi8tKg==}
@@ -11978,6 +11972,8 @@ snapshots:
 
   '@sxzz/popperjs-es@2.11.7': {}
 
+  '@toon-format/toon@2.1.0': {}
+
   '@trysound/sax@0.2.0': {}
 
   '@ts-morph/common@0.27.0':
@@ -13104,8 +13100,6 @@ snapshots:
       '@types/expect': 1.20.4
       '@types/node': 18.0.4
 
-  '@types/web-bluetooth@0.0.16': {}
-
   '@types/web-bluetooth@0.0.20': {}
 
   '@types/web-bluetooth@0.0.21': {}
@@ -13758,16 +13752,6 @@ snapshots:
       '@vueuse/shared': 13.9.0(vue@3.5.25(typescript@5.9.3))
       vue: 3.5.25(typescript@5.9.3)
 
-  '@vueuse/core@9.13.0(vue@3.5.25(typescript@5.9.3))':
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.13.0
-      '@vueuse/shared': 9.13.0(vue@3.5.25(typescript@5.9.3))
-      vue-demi: 0.14.10(vue@3.5.25(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
   '@vueuse/integrations@12.8.2(async-validator@4.2.5)(change-case@5.4.4)(focus-trap@7.6.6)(sortablejs@1.15.6)(typescript@5.9.3)':
     dependencies:
       '@vueuse/core': 12.8.2(typescript@5.9.3)
@@ -13787,8 +13771,6 @@ snapshots:
 
   '@vueuse/metadata@13.9.0': {}
 
-  '@vueuse/metadata@9.13.0': {}
-
   '@vueuse/shared@10.11.1(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       vue-demi: 0.14.10(vue@3.5.25(typescript@5.9.3))
@@ -13805,13 +13787,6 @@ snapshots:
   '@vueuse/shared@13.9.0(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       vue: 3.5.25(typescript@5.9.3)
-
-  '@vueuse/shared@9.13.0(vue@3.5.25(typescript@5.9.3))':
-    dependencies:
-      vue-demi: 0.14.10(vue@3.5.25(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   '@vunk/core@1.6.5': {}
 
@@ -15256,7 +15231,7 @@ snapshots:
 
   electron-to-chromium@1.5.267: {}
 
-  element-plus@2.12.0(vue@3.5.25(typescript@5.9.3)):
+  element-plus@2.13.0(vue@3.5.25(typescript@5.9.3)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.2(vue@3.5.25(typescript@5.9.3))
@@ -15264,7 +15239,7 @@ snapshots:
       '@popperjs/core': '@sxzz/popperjs-es@2.11.7'
       '@types/lodash': 4.17.21
       '@types/lodash-es': 4.17.12
-      '@vueuse/core': 9.13.0(vue@3.5.25(typescript@5.9.3))
+      '@vueuse/core': 10.11.1(vue@3.5.25(typescript@5.9.3))
       async-validator: 4.2.5
       dayjs: 1.11.19
       lodash: 4.17.21
