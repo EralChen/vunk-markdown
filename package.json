@@ -25,6 +25,7 @@
     "@element-plus/icons-vue": "^2.3.1",
     "@mdit/plugin-katex": "^0.23.1",
     "@skzz/platform": "0.0.0-alpha.76",
+    "@toon-format/toon": "^2.1.0",
     "@vuesri/core": "^2.0.0",
     "@vuesri/three": "0.0.4",
     "@vueuse/core": "^13.2.0",
