@@ -25,7 +25,7 @@ importers:
         version: 2.1.0
       '@vuesri/core':
         specifier: ^2.0.0
-        version: 2.1.0(@arcgis/core@4.34.8)(@vunk/core@1.6.5)(vue@3.5.25(typescript@5.9.3))
+        version: 2.1.0(@arcgis/core@4.34.8)(@vunk/core@1.6.9)(vue@3.5.25(typescript@5.9.3))
       '@vuesri/three':
         specifier: 0.0.4
         version: 0.0.4
@@ -48,8 +48,8 @@ importers:
         specifier: workspace:*
         version: link:packages/shared
       '@vunk/core':
-        specifier: 1.6.5
-        version: 1.6.5
+        specifier: 1.6.9
+        version: 1.6.9
       '@vunk/echarts':
         specifier: ^0.0.3
         version: 0.0.3
@@ -3676,8 +3676,8 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@vunk/core@1.6.5':
-    resolution: {integrity: sha512-plDN+pMJ2WOgKIhlHGVZqQeHa4QugKSX2wlZNsHPFPF6/7HKY5ug7VfgbGDeZCm2X9fSX/gqNjkUHUQOtZ9zpw==}
+  '@vunk/core@1.6.9':
+    resolution: {integrity: sha512-vd4sHMPiGRDcY2177FdkXnyfsN7BeT38qFkHIPHslAKOCPFzbjN75Una8uxx67NYIW8C65VA6WgNxGIw2eR2tA==}
 
   '@vunk/echarts@0.0.3':
     resolution: {integrity: sha512-0vXzQWTRfRCgh/mKZ7cqrhNOUg3Smvizm3NU7TScVbC9b1GN9mh+L59n5Gqti47qFAqDbigESS7mG6wV/EqqBA==}
@@ -13714,11 +13714,11 @@ snapshots:
 
   '@vue/shared@3.5.25': {}
 
-  '@vuesri/core@2.1.0(@arcgis/core@4.34.8)(@vunk/core@1.6.5)(vue@3.5.25(typescript@5.9.3))':
+  '@vuesri/core@2.1.0(@arcgis/core@4.34.8)(@vunk/core@1.6.9)(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@arcgis/core': 4.34.8
       '@vueuse/core': 10.11.1(vue@3.5.25(typescript@5.9.3))
-      '@vunk/core': 1.6.5
+      '@vunk/core': 1.6.9
       lodash-es: 4.17.21
       vue: 3.5.25(typescript@5.9.3)
     transitivePeerDependencies:
@@ -13788,7 +13788,7 @@ snapshots:
     dependencies:
       vue: 3.5.25(typescript@5.9.3)
 
-  '@vunk/core@1.6.5': {}
+  '@vunk/core@1.6.9': {}
 
   '@vunk/echarts@0.0.3': {}
 
