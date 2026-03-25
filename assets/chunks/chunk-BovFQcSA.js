@@ -1,0 +1,1 @@
+import{ha as p,hb as s,eO as f}from"./chunk-VU8Qh-0m.js";import{p as n}from"./chunk-55_dTBs2.js";import"./chunk-DsYbGKja.js";import"./chunk-Nnclkl-U.js";/* empty css              */async function O(r,o,t,a){const m=p(r),e={...a},{data:i}=await n(m,s.from(o),t,e);return f.fromJSON(i)}export{O as executeTopFeaturesQuery};
