@@ -10,6 +10,9 @@
 
 :::demo
 render-tag/basic
+>>>subs
+[render-tag/table-resolver, render-tag/tables]
+>>>
 :::
 
 ## A
