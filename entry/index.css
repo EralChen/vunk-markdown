@@ -1,0 +1,3 @@
+/* components/components.css */
+.vk-template-echarts__error{color:#fff;z-index:1;background:#000000b3;padding:20px;position:absolute;inset:0;overflow:hidden}.vk-template-echarts__error pre{white-space:pre-wrap;word-break:break-all;margin:0;padding:10px;font-size:12px}.vk-template-echarts__wrapper{height:500px;position:relative}body>[id^=dv-] svg{position:fixed;top:0;left:-9999px}
+/*$vite$:1*/

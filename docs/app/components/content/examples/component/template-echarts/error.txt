@@ -1,0 +1,45 @@
+
+{
+  "tooltip": {
+    "trigger": "item",
+    "formatter": "{a}<br/>{b}: {c}亩"
+  },
+  "toolbox": {
+    "show": true,
+    "feature": {
+      "mark": { "show": true },
+      "dataView": { "show": true, "readOnly": false },
+      "restore": { "show": true },
+      "saveAsImage": { "show": true }
+    }
+  },
+  "geo": {
+    "map": "china",
+    "roam": true,
+    "type": "map",
+    "emphasis": {
+      "itemStyle": {
+        "areaColor": "#2a333d"
+      }
+    },
+    "itemStyle": {
+      "areaColor": "#319fd0"
+    }
+  },
+  "series": [
+    {
+      "name": "早稻种植面积",
+      "type": "map",
+      "data": [
+        {"name": "沈荡镇", "value": 434.66},
+        {"name": "望海街道", "value": 94.37},
+        {"name": "西塘桥街道", "value": 86.01},
+        {"name": "武原街道", "value": 146.02}
+      ],
+      "label": {
+        "show": true,
+        "formatter": "{b}: {c}亩"
+      }
+    }
+  ]
+}

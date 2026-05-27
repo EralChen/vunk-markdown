@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "../env.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.vue"
+  ],
+  "exclude": [
+    "dist",
+    "vite.config.ts"
+  ],
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "rootDir": "./",
+    "outDir": "dist",
+    "noImplicitAny": false,
+    "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.node.tsbuildinfo"
+  }
+}

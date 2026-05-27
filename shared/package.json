@@ -1,0 +1,10 @@
+{
+  "name": "@vunk-markdown/shared",
+  "private": true,
+  "scripts": {
+    "build": "run-p build:es build:types",
+    "build:es": "vite build",
+    "build:types": "vue-tsc"
+  },
+  "type": "module"
+}

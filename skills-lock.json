@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "create-docs": {
+      "source": "docs.mhaibaraai.cn",
+      "sourceType": "well-known",
+      "computedHash": "36b4367e4a2351b07bda01c3f49ee1880c561aedb17600becd86b9118e8860a6"
+    },
+    "review-docs": {
+      "source": "docs.mhaibaraai.cn",
+      "sourceType": "well-known",
+      "computedHash": "ae28aad2df0fce20fbe1a55493387795900268c91e9c1493b0cd25cd68ee198d"
+    }
+  }
+}

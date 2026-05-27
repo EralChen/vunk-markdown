@@ -1,0 +1,26 @@
+[
+  {
+    "templateType": "VkfInput",
+    "label": "姓名",
+    "prop": "name"
+  },
+  {
+    "templateType": "VkfSwitch",
+    "label": "是否喜欢",
+    "prop": "like"
+  },
+  {
+    "label": "满意度",
+    "prop": "degree",
+    "templateType": "VkfSlider",
+    "min": 0,
+    "max": 100
+  },
+  {
+    "templateIf": "return data.like",
+    "label": "原因",
+    "templateType": "VkfInput",
+    "prop": "reason"
+
+  }
+]

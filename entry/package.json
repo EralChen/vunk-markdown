@@ -1,0 +1,90 @@
+{
+  "name": "@vunk/markdown",
+  "version": "2.0.0",
+  "description": "Markdown component toolkit for Vue ecosystem.",
+  "author": "EralChen",
+  "license": "MIT",
+  "homepage": "https://eralchen.github.io/vunk-markdown/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EralChen/vunk-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EralChen/vunk-markdown/issues"
+  },
+  "keywords": [
+    "vue",
+    "markdown",
+    "markdown-it",
+    "markdown-exit",
+    "component library"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./components/markdown": {
+      "import": "./components/markdown/index.es.js",
+      "types": "./components/markdown/index.d.ts"
+    },
+    "./components/resolver-json": {
+      "import": "./components/resolver-json/index.es.js",
+      "types": "./components/resolver-json/index.d.ts"
+    },
+    "./components/resolver-toon": {
+      "import": "./components/resolver-toon/index.es.js",
+      "types": "./components/resolver-toon/index.d.ts"
+    },
+    "./components/strategy-renderer": {
+      "import": "./components/strategy-renderer/index.es.js",
+      "types": "./components/strategy-renderer/index.d.ts"
+    },
+    "./components/template-echarts": {
+      "import": "./components/template-echarts/index.es.js",
+      "types": "./components/template-echarts/index.d.ts"
+    },
+    "./components/template-form": {
+      "import": "./components/template-form/index.es.js",
+      "types": "./components/template-form/index.d.ts"
+    },
+    "./components/template-mermaid": {
+      "import": "./components/template-mermaid/index.es.js",
+      "types": "./components/template-mermaid/index.d.ts"
+    },
+    "./components/template-vis": {
+      "import": "./components/template-vis/index.es.js",
+      "types": "./components/template-vis/index.d.ts"
+    },
+    "./components/templates-container": {
+      "import": "./components/templates-container/index.es.js",
+      "types": "./components/templates-container/index.d.ts"
+    },
+    "./components/templates-default": {
+      "import": "./components/templates-default/index.es.js",
+      "types": "./components/templates-default/index.d.ts"
+    },
+    "./components/templates-fence": {
+      "import": "./components/templates-fence/index.es.js",
+      "types": "./components/templates-fence/index.d.ts"
+    },
+    "./composables/jsonrepair": {
+      "import": "./composables/jsonrepair/index.es.js",
+      "types": "./composables/jsonrepair/index.d.ts"
+    },
+    "./composables/toon-encode": {
+      "import": "./composables/toon-encode/index.es.js",
+      "types": "./composables/toon-encode/index.d.ts"
+    },
+    "./index.css": {
+      "import": "./index.css"
+    },
+    "./shared/container": {
+      "import": "./shared/container/index.es.js",
+      "types": "./shared/container/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bash ./build.sh"
+  }
+}

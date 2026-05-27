@@ -1,0 +1,13 @@
+{
+  "name": "@vunk-formaker/vike",
+  "scripts": {
+    "dev": "vike dev",
+    "build": "vike build",
+    "preview": "vike build && vike preview"
+  },
+  "dependencies": {
+    "vike": "^0.4.259",
+    "vike-vue": "^0.9.11"
+  },
+  "type": "module"
+}

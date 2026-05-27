@@ -1,0 +1,18 @@
+title: @vunk/markdown 版本发布
+description: 查看 @vunk/markdown 的版本更新、功能增强与问题修复。
+navigation: false
+releases: https://ungh.cc/repos/EralChen/vunk-markdown/releases
+hero:
+  title: @vunk/markdown 版本发布
+  description: Markdown component toolkit for Vue ecosystem.
+  links:
+    - label: 查看项目主页
+      to: https://eralchen.github.io/vunk-markdown/
+      target: _blank
+      icon: i-lucide-book-open
+    - label: 在 GitHub 上标星
+      color: neutral
+      variant: outline
+      to: https://github.com/EralChen/vunk-markdown
+      target: _blank
+      icon: i-lucide-star

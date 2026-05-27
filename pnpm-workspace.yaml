@@ -1,0 +1,18 @@
+packages:
+  - internal
+  - components
+  - composables
+  - vike
+  - app
+  - docs
+  - shared
+  - entry
+
+allowBuilds:
+  '@parcel/watcher': true
+  '@vaadin/vaadin-usage-statistics': true
+  better-sqlite3: true
+  core-js: true
+  esbuild: true
+  sharp: true
+  vue-demi: true
