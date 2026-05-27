@@ -85,6 +85,7 @@
     }
   },
   "scripts": {
-    "build": "bash ./build.sh"
+    "build": "bash ./build.sh",
+    "publish": "npm publish --access public --registry https://registry.npmjs.org/"
   }
 }

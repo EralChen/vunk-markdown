@@ -11,7 +11,7 @@
     "@nuxt/ui": "^4.8.0",
     "@vuesri/core": "^2.1.0",
     "@vueuse/core": "^14.3.0",
-    "@vunk/markdown": "file:../entry",
+    "@vunk/markdown": "file:..\\entry",
     "ant-design-x-vue": "^1.6.0",
     "better-sqlite3": "^12.10.0",
     "element-plus": "^2.14.0",

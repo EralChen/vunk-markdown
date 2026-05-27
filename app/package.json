@@ -11,7 +11,7 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
-    "@vunk/markdown": "file:../entry"
+    "@vunk/markdown": "file:..\\entry"
   },
   "devDependencies": {
     "vite-plugin-vue-devtools": "^8.1.2"
