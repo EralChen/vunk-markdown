@@ -110,7 +110,7 @@ importers:
     dependencies:
       '@vunk/markdown':
         specifier: file:..\entry
-        version: link:../entry
+        version: file:entry
     devDependencies:
       vite-plugin-vue-devtools:
         specifier: ^8.1.2
@@ -158,7 +158,7 @@ importers:
         version: 14.3.0(vue@3.5.34(typescript@6.0.3))
       '@vunk/markdown':
         specifier: file:..\entry
-        version: link:../entry
+        version: file:entry
       ant-design-x-vue:
         specifier: ^1.6.0
         version: 1.6.0(ant-design-vue@4.2.6(vue@3.5.34(typescript@6.0.3)))(vue@3.5.34(typescript@6.0.3))
@@ -205,8 +205,6 @@ importers:
       unocss-preset-vunk:
         specifier: ^1.0.4
         version: 1.0.4
-
-  entry: {}
 
   internal: {}
 
@@ -3871,6 +3869,9 @@ packages:
 
   '@vunk/form@2.18.2':
     resolution: {integrity: sha512-sleH5UceWit4TZaonSV1rkpvhrufMO9GA29jFCcvo5kxRJSRcUACVOKRRMB97JAYW3LQohA3qGlWwd23SmNvSQ==}
+
+  '@vunk/markdown@file:entry':
+    resolution: {directory: entry, type: directory}
 
   '@vunk/plus@1.12.2':
     resolution: {integrity: sha512-4JE707sG9E0iQZ3MTKyjojmT2QDQQqNPanmvFygafQ+HHFFwwARx0yCjK6set5NhmHVgip9YFsNSCtcUnU6x0A==}
@@ -12748,6 +12749,8 @@ snapshots:
   '@vunk/echarts@0.0.3': {}
 
   '@vunk/form@2.18.2': {}
+
+  '@vunk/markdown@file:entry': {}
 
   '@vunk/plus@1.12.2': {}
 

@@ -1,6 +1,6 @@
 {
   "name": "@vunk/markdown",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Markdown component toolkit for Vue ecosystem.",
   "author": "EralChen",
   "license": "MIT",
@@ -85,7 +85,6 @@
     }
   },
   "scripts": {
-    "build": "bash ./build.sh",
-    "publish": "npm publish --access public --registry https://registry.npmjs.org/"
+    "build": "bash ./build.sh"
   }
 }
