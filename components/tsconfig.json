@@ -19,10 +19,10 @@
     "declaration": true,
     "rootDir": "./",
     "outDir": "dist",
-    "noImplicitAny": false,
+    "noImplicitAny": false
     
     // `vue-tsc --build` produces a .tsbuildinfo file for incremental type-checking.
     // Specified here to keep it out of the root directory.
-    "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.node.tsbuildinfo"
+    // "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.node.tsbuildinfo"
   }
 }
