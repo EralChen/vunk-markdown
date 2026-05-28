@@ -1,6 +1,6 @@
 {
   "name": "@vunk/markdown",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Markdown component toolkit for Vue ecosystem.",
   "author": "EralChen",
   "license": "MIT",
@@ -55,6 +55,10 @@
     "./components/template-vis": {
       "import": "./components/template-vis/index.es.js",
       "types": "./components/template-vis/index.d.ts"
+    },
+    "./components/template-vis-chart": {
+      "import": "./components/template-vis-chart/index.es.js",
+      "types": "./components/template-vis-chart/index.d.ts"
     },
     "./components/templates-container": {
       "import": "./components/templates-container/index.es.js",

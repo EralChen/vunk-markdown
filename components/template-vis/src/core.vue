@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { GPTVis } from '@antv/gpt-vis'
+import { GPTVis, isVisSyntax } from '@antv/gpt-vis'
 import { onMounted, onUnmounted, ref, watch } from 'vue'
 import type { TemplateVisOptions } from './types'
 import { nextTick } from 'vue';
@@ -13,10 +13,8 @@ const chartRef = ref<HTMLDivElement>()
 let gptVis: GPTVis | null = null
 
 function read (v = props.content) {
-  try {
+  if (isVisSyntax(v)) {
     gptVis?.render(v)
-  } catch (err) {
-    console.warn('gptVis rendering' , err)
   }
 }
 

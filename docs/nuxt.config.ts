@@ -52,13 +52,13 @@ export default defineNuxtConfig({
         }
       },
       include: [
+        '@element-plus/icons-vue',
         'element-plus',
         'markdown-exit',
-        '@element-plus/icons-vue'
       ],
       exclude: [
-        '@vunk/plus/components/monaco-editor',
-        'monaco-editor'
+        'monaco-editor',
+        '@antv/gpt-vis',
       ]
     }
   }

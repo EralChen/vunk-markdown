@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { VkTemplateVis } from '@vunk/markdown/components/template-vis'
-import { VkMarkdown, VkTemplatesDefault } from '@vunk/markdown'
+import { VkMarkdown } from '@vunk/markdown/components/markdown'
+import { VkTemplatesDefault } from '@vunk/markdown/components/templates-default'
 import { computed, ref } from 'vue'
 
 const data = `
@@ -8,7 +9,7 @@ const data = `
 
 Here’s a visualization of Haidilao's food delivery revenue from 2013 to 2022. You can see a steady increase over the years, with notable *growth* particularly in recent years.
 
-\`\`\`vis-chart
+\`\`\`vis
 {
   "type": "line",
   "data": [
