@@ -5,30 +5,21 @@ import Core from './core.vue'
 import { emits, props as dpops } from './ctx'
 
 export default defineComponent({
-  name: 'VkTemplateVis',
+  name: 'VkTemplateVisChart',
   components: {
     VkRendererTemplate,
     Core,
   },
   props: dpops,
   emits,
-  methods: {
-    getSyntax (raw: { content: string, info?: string }) {
-      const info = raw.info?.trim()
-      if (!raw.content.startsWith('vis')) {
-        return `${info}\n${raw.content}`
-      }
-      return raw.content
-    },
-  },
 })
 </script>
 
 <template>
-  <VkRendererTemplate type="fence:vis">
+  <VkRendererTemplate type="fence:vis-chart">
     <template #default="{ raw }">
       <Core
-        :content="getSyntax(raw)"
+        :content="raw.content"
         :options="defaultOptions"
       />
     </template>
