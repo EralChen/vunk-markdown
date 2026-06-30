@@ -10,6 +10,35 @@ import { throttle } from 'es-toolkit'
 import { computed, defineComponent, nextTick, onBeforeUnmount, ref, watchEffect } from 'vue'
 import { parse } from 'yaml'
 
+function parseJsObjectLiteral (source: string): NormalObject {
+  // 将包含 formatter 等函数字面量的配置作为 JS 对象表达式执行。
+  const factory = new Function(`"use strict"; return (${source});`)
+  const value = factory()
+
+  if (!isObject(value)) {
+    throw new TypeError('ECharts options must be an object')
+  }
+
+  return value
+}
+
+function parseEchartsOptions (source: string): NormalObject {
+  // 优先按 JSON/YAML 解析，失败后再尝试 jsonrepair，保留流式输出时的容错能力。
+  try {
+    return parse(source)
+  }
+  catch {
+    try {
+      const repairedJson = jsonrepair(source)
+      return parse(repairedJson)
+    }
+    catch {
+      // 最后才执行 JS 对象表达式，用于支持 ECharts 回调函数配置。
+      return parseJsObjectLiteral(source)
+    }
+  }
+}
+
 export default defineComponent({
   props: {
     source: {
@@ -53,14 +82,10 @@ export default defineComponent({
       noop(jsonStr.value)
       await nextTick()
       try {
-        json.value = parse(jsonStr.value)
+        json.value = parseEchartsOptions(jsonStr.value)
       }
       catch {
-        try {
-          const repairedJson = jsonrepair(jsonStr.value)
-          json.value = parse(repairedJson)
-        }
-        catch {}
+        // 解析失败时保留上一次可渲染配置，避免流式内容半截输出时清空图表。
       }
     })
 
@@ -75,7 +100,7 @@ export default defineComponent({
         }
 
         if (theToken.value.info.includes('yaml')) {
-          return parse(theToken.value.content)
+          return parseEchartsOptions(theToken.value.content)
         }
       }
       catch {
